@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-🤖 Awesome AI Skills — 自动发现脚本
-=====================================
+🤖 Awesome AI Skills — 自动发现（限流优化版）
+==============================================
 
-用 GitHub Search API 自动扫描热门 AI Skill 项目，
-发现新的 → 拉 Star 数和描述 → 合并进 skills.json → 排序 → 保存。
-
-GitHub Actions 每周自动运行，让你的项目自己"生长"！
+核心优化：
+  1. 只读 Search API（30次/分钟），删掉每个 repo 多调 3-4 次的 repo_has_skill_file
+  2. 读 Retry-After / X-RateLimit-Reset 头精确等待，不瞎 sleep
+  3. 精准关键词 + 高 stars 门槛，减少无效调用
+  4. per_page=30 一次拿满，比分 3 页更高效
 """
 
 import json
@@ -19,157 +20,123 @@ import urllib.parse
 import urllib.error
 from datetime import datetime
 
-# ============== 配置区 ==============
-# 搜索关键词（按优先级）
+# ============== 精准关键词（6 个，覆盖全品类）==============
+# 用 stars: 前置过滤，直接排除垃圾
 SEARCH_QUERIES = [
-    "agent skill claude code stars:>100",
-    "agent skills AI coding star stars:>200",
-    "claude code skill stars:>100",
-    "cursor skill AI agent stars:>100",
-    "openclaw skill stars:>50",
-    "mcp server AI tool stars:>200",
-    "jailbreak red team LLM stars:>500",
-    "prompt injection AI security stars:>200",
+    # 核心 Skill / Agent
+    "stars:>500 skill agent language:python",
+    "stars:>500 agentic skill claude cursor",
+    "stars:>1000 AI agent framework language:python",
+    # 安全 / 红队
+    "stars:>500 LLM jailbreak red team",
+    # MCP / 工具链
+    "stars:>500 MCP server AI tool",
+    # 学习 / Awesome
+    "stars:>500 awesome AI agent",
 ]
 
-# 只收录这些主语言
-PREFERRED_LANGS = {"python", "typescript", "javascript", "shell", "go", "rust"}
+# ============== 分类推断（只用 repo desc + name，0 额外 API）==============
+CATEGORY_RULES = [
+    ("prompts", ["jailbreak", "red team", "prompt injection", "security", "pentest", "attack"]),
+    ("framework", ["agent framework", "agentic framework", "autonomous agent", "multi-agent", "llm agent", "agent loop"]),
+    ("skills", ["agent skill", "agentic skill", "coding agent skill", "skill pack", "skills bundle"]),
+    ("memory", ["persistent memory", "long-term memory", "vector memory", "llm memory"]),
+    ("web", ["web scraping", "crawl", "firecrawl", "playwright", "browser automation"]),
+    ("code", ["code generation", "code review", "IDE plugin", "developer tool", "coding assistant"]),
+    ("vertical", ["marketing", "ppt", "career", "finance", "research agent"]),
+    ("learn", ["awesome", "tutorial", "course", "learn ai", "agent course"]),
+]
 
-# 分类映射（基于 repo 描述 + 关键词）
-CATEGORY_KEYWORDS = {
-    "framework": ["agent framework", "agentic framework", "autonomous agent", "llm agent", "multi-agent"],
-    "skills": ["skill", "skills", "agentic skills", "coding agent skill"],
-    "memory": ["memory", "persistent", "vector memory", "long-term"],
-    "web": ["web scraping", "crawl", "browser", "playwright", "firecrawl", "search api"],
-    "code": ["coding", "code generation", "code review", "IDE", "developer tool"],
-    "vertical": ["marketing", "ppt", "career", "research", "finance", "creative"],
-    "learn": ["awesome", "learn", "tutorial", "course", "book"],
-    "prompts": ["system prompt", "prompt engineering", "prompt injection", "jailbreak", "red team", "security"],
+CATEGORY_EMOJI = {
+    "framework": "🧠", "skills": "⚡", "memory": "💾",
+    "web": "🌐", "code": "💻", "prompts": "🔍",
+    "learn": "📚", "vertical": "🎯",
 }
 
-# 安装命令推断规则（简单启发式）
-INSTALL_RULES = [
-    ("pip install", lambda r: r.get("language", "").lower() == "python"),
-    ("npm install -g", lambda r: r.get("language", "").lower() in ("typescript", "javascript")),
-    ("npx skills add", lambda r: "skill" in r.get("description", "").lower() or "agentic skill" in r.get("description", "").lower()),
-    ("git clone", lambda r: True),  # 兜底
-]
 
-
-# ============== GitHub API 工具 ==============
-def gh_api(path, token=None):
-    """调 GitHub API，自动处理限流"""
-    url = f"https://api.github.com{path}"
+# ============== 限流感知的 API 调用 ==============
+def gh_search(query, token=None):
+    """
+    调 GitHub Search API（30次/分钟 限流）
+    - 读 X-RateLimit-Remaining 头，剩 <3 就 sleep 到 Reset
+    - 403 限流时读 Retry-After 头精确等待
+    - 每页 30 条，只拿第 1 页（够用了）
+    """
+    q = urllib.parse.quote(query)
+    url = f"https://api.github.com/search/repositories?q={q}&sort=stars&order=desc&per_page=30&page=1"
     headers = {
         "Accept": "application/vnd.github.v3+json",
-        "User-Agent": "awesome-ai-skills-discoverer",
-        "X-GitHub-Api-Version": "2022-11-28",
+        "User-Agent": "awesome-ai-skills-v2",
     }
     if token:
         headers["Authorization"] = f"Bearer {token}"
 
-    for attempt in range(3):
+    for attempt in range(5):  # 最多重试 5 次
         try:
             req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req, timeout=20) as resp:
+                remaining = int(resp.headers.get("X-RateLimit-Remaining", "999"))
+                reset_ts = int(resp.headers.get("X-RateLimit-Reset", "0"))
+                if remaining < 3:
+                    wait = max(1, reset_ts - int(time.time()) + 1)
+                    print(f"  🕐 Search API 剩 {remaining} 次，等 {wait}s 到限流恢复...")
+                    time.sleep(wait)
                 return json.loads(resp.read().decode("utf-8"))
+
         except urllib.error.HTTPError as e:
             if e.code == 403:
-                print(f"  ⚠️ 限流，等 30s..."); time.sleep(30); continue
-            if e.code == 404:
-                return None
-            print(f"  ❌ HTTP {e.code}: {path}"); return None
-        except Exception as e:
-            print(f"  ❌ {e}"); time.sleep(5); return None
+                retry_after = int(e.headers.get("Retry-After", "30"))
+                print(f"  ⚠️ 403 限流！Retry-After={retry_after}s，等完再试（第 {attempt+1} 次重试）")
+                time.sleep(retry_after + 1)
+                continue
+            if e.code == 422:
+                print(f"  ⏭️  422 搜不到: {query}"); return None
+            print(f"  ❌ HTTP {e.code}: {query}"); return None
+        except Exception as ex:
+            print(f"  ❌ {ex}"); time.sleep(3); continue
     return None
 
 
-def search_repos(query, max_per_query=15):
-    """搜 GitHub 仓库"""
-    results = []
-    for page in range(1, 4):  # 搜前 3 页
-        q = urllib.parse.quote(query)
-        data = gh_api(f"/search/repositories?q={q}&sort=stars&order=desc&per_page={max_per_query}&page={page}")
-        if not data or "items" not in data:
-            break
-        items = data["items"]
-        if not items:
-            break
-        results.extend(items)
-        time.sleep(0.5)  # Search API 有限流
-    return results
-
-
-def repo_has_skill_file(full_name):
-    """检查仓库根目录有没有 SKILL.md / skill.md / MCP 相关"""
-    for filename in ["SKILL.md", "skill.md", "skill.json"]:
-        data = gh_api(f"/repos/{full_name}/contents/{filename}")
-        if data and "name" in data:
-            return True
-    # 也检查 .claude/skills/ 等常见路径
-    for path in [".claude/skills", ".cursor/skills", ".openclaw/skills", "skills"]:
-        data = gh_api(f"/repos/{full_name}/contents/{path}")
-        if data and isinstance(data, list):
-            for item in data:
-                if item.get("name", "").lower().endswith(".md"):
-                    return True
-    return False
-
-
-# ============== 分类 & 推断 ==============
+# ============== 快速推断（0 额外 API）==============
 def guess_category(repo):
-    """根据仓库描述推断分类"""
-    text = f"{repo.get('description', '')} {repo.get('name', '')}".lower()
-    scores = {}
-    for cat, kws in CATEGORY_KEYWORDS.items():
-        scores[cat] = sum(1 for kw in kws if kw in text)
-    if max(scores.values()) == 0:
-        return "vertical"  # 默认归到垂直领域
-    return max(scores, key=scores.get)
-
+    text = f"{repo.get('description','')} {repo.get('name','')}".lower()
+    for cat, kws in CATEGORY_RULES:
+        if any(kw in text for kw in kws):
+            return cat
+    return "vertical"
 
 def guess_install(repo):
-    """猜测安装命令"""
-    desc = repo.get("description", "").lower()
-    lang = repo.get("language", "").lower()
+    lang = (repo.get("language") or "").lower()
+    name = repo.get("name", "")
     owner = repo.get("full_name", "")
-
+    desc = repo.get("description", "").lower()
     if lang == "python":
-        return f"pip install {repo['name']}"
+        return f"pip install {name}"
     if lang in ("typescript", "javascript") and "skill" in desc:
         return f"npx skills add {owner}"
     if lang in ("typescript", "javascript"):
-        return f"npm install -g {repo['name']}"
+        return f"npm install -g {name}"
     return f"git clone https://github.com/{owner}.git"
 
-
-def guess_emoji(repo):
-    """给每个 skill 一个 emoji（按分类）"""
-    cat = guess_category(repo)
-    emoji_map = {
-        "framework": "🧠", "skills": "⚡", "memory": "💾",
-        "web": "🌐", "code": "💻", "prompts": "🔍",
-        "learn": "📚", "vertical": "🎯",
-    }
-    return emoji_map.get(cat, "✨")
+def guess_emoji(cat):
+    return CATEGORY_EMOJI.get(cat, "✨")
 
 
 # ============== 主流程 ==============
 def main():
     print("=" * 60)
-    print("🤖 Awesome AI Skills — 自动发现")
+    print("🤖 Awesome AI Skills — 自动发现 v2（限流优化版）")
     print("=" * 60)
 
-    token = os.environ.get("GITHUB_TOKEN")
-    if not token:
-        print("⚠️  未设置 GITHUB_TOKEN，API 限流会比较严（60次/小时）")
+    token = os.environ.get("GITHUB_TOKEN", "")
+    if token:
+        print("✅ 已有 GITHUB_TOKEN")
     else:
-        print("✅ 已有 GITHUB_TOKEN（5000次/小时）")
+        print("⚠️  未设置 GITHUB_TOKEN，限流 30次/分钟（Search API）")
 
-    # 1. 读现有数据
+    # 1. 读现有
     here = os.path.dirname(os.path.abspath(__file__))
-    data_path = os.path.join(here, "..", "docs", "data", "skills.json")
-    data_path = os.path.abspath(data_path)
+    data_path = os.path.abspath(os.path.join(here, "..", "docs", "data", "skills.json"))
 
     with open(data_path, "r", encoding="utf-8") as f:
         existing = json.load(f)
@@ -178,48 +145,43 @@ def main():
     existing_repos = {s["repo"] for s in existing["skills"]}
     print(f"\n📚 现有 {len(existing['skills'])} 个 Skill")
 
-    # 2. 搜新仓库
-    print(f"\n🔍 开始搜 GitHub（{len(SEARCH_QUERIES)} 个关键词）...")
+    # 2. 搜（仅 Search API，6 关键词 × 1 页 = 6 次调用）
+    print(f"\n🔍 开始搜 GitHub（{len(SEARCH_QUERIES)} 个精准关键词）...")
     all_candidates = []
-    for q in SEARCH_QUERIES:
-        print(f"  🔎 {q}")
-        repos = search_repos(q)
-        for r in repos:
-            full_name = r["full_name"]
-            if full_name in existing_repos:
-                continue  # 已有，跳过
-            if r.get("stargazers_count", 0) < 50:
-                continue  # 星太少
-            if r.get("archived"):
-                continue
-            all_candidates.append(r)
-        time.sleep(1)
 
-    # 3. 去重 + 过滤
-    seen = set()
+    for i, q in enumerate(SEARCH_QUERIES, 1):
+        print(f"  [{i}/{len(SEARCH_QUERIES)}] 🔎 {q}")
+        data = gh_search(q, token=token)
+        if data and "items" in data:
+            for r in data["items"]:
+                if r["full_name"] in existing_repos:
+                    continue
+                if r.get("archived"):
+                    continue
+                if r.get("stargazers_count", 0) < 50:
+                    continue
+                all_candidates.append(r)
+        # Search API 30次/分钟，每次间隔 2.1s 刚好不触发限流
+        if i < len(SEARCH_QUERIES):
+            time.sleep(2.1)
+
+    # 3. 去重 + 排序
+    seen_ids = set()
     new_repos = []
     for r in sorted(all_candidates, key=lambda x: -x.get("stargazers_count", 0)):
-        if r["id"] in seen:
+        if r["id"] in seen_ids:
             continue
-        seen.add(r["id"])
+        seen_ids.add(r["id"])
+        new_repos.append(r)
 
-        # 优先收有 SKILL.md 的
-        has_skill = repo_has_skill_file(r["full_name"])
-        if has_skill or r.get("stargazers_count", 0) >= 1000:
-            new_repos.append(r)
-            print(f"  ✅ 新候选: {r['full_name']} ({r['stargazers_count']:,}⭐) {'[有SKILL.md]' if has_skill else ''}")
-        else:
-            print(f"  ⏭️  跳过: {r['full_name']} ({r['stargazers_count']}⭐ 太小且无SKILL.md)")
+    print(f"\n🎯 去重后 {len(new_repos)} 个候选新 Skill")
 
-    print(f"\n🎯 发现 {len(new_repos)} 个新 Skill 项目")
-
-    # 4. 转成我们的数据格式
+    # 4. 入库（0 额外 API！）
+    added = 0
     for r in new_repos:
         cat = guess_category(r)
         stars = r.get("stargazers_count", 0)
         desc = r.get("description", "") or "(无描述)"
-
-        # 生成 id（owner_name 形式，转小写+去特殊字符）
         safe_name = r["name"].lower().replace("-", "_").replace(".", "_")
         safe_owner = r["owner"]["login"].lower()
         sid = f"{safe_owner}_{safe_name}"
@@ -233,9 +195,9 @@ def main():
             "owner": r["owner"]["login"],
             "repo": r["full_name"],
             "stars": stars,
-            "emoji": guess_emoji(r),
+            "emoji": guess_emoji(cat),
             "shortDesc": desc[:80],
-            "descEn": desc[:100],
+            "descEn": desc[:120],
             "features": [],
             "install": guess_install(r),
             "usage": f"安装后参考 {r['html_url']} 的 README",
@@ -245,24 +207,30 @@ def main():
         }
         existing["skills"].append(entry)
         existing_ids.add(sid)
+        added += 1
+        print(f"  ✅ [{cat[:8]}] {r['full_name']} ({stars:,}⭐) — {desc[:50]}")
 
-    # 5. 按 Star 排序
+    # 5. 排序 + 保存
     existing["skills"].sort(key=lambda x: x["stars"], reverse=True)
 
-    # 6. 保存
     with open(data_path, "w", encoding="utf-8") as f:
         json.dump(existing, f, ensure_ascii=False, indent=2)
 
-    print(f"\n✅ 完成！现在总共 {len(existing['skills'])} 个 Skill")
-    print(f"📝 发现日志: {len(new_repos)} 个新增")
+    print(f"\n{'='*60}")
+    print(f"✅ 新增 {added} 个 Skill！总计 {len(existing['skills'])} 个")
+    print(f"{'='*60}")
 
-    # 7. 写发现日志（可选）
-    log_dir = os.path.join(here, "..", "discovery-logs")
-    os.makedirs(log_dir, exist_ok=True)
-    log_path = os.path.join(log_dir, f"{datetime.now().strftime('%Y%m%d_%H%M')}.json")
-    with open(log_path, "w", encoding="utf-8") as f:
-        json.dump(new_repos, f, ensure_ascii=False, indent=2)
-    print(f"📄 发现日志: {log_path}")
+    # 6. 发现日志
+    if new_repos:
+        log_dir = os.path.abspath(os.path.join(here, "..", "discovery-logs"))
+        os.makedirs(log_dir, exist_ok=True)
+        log_path = os.path.join(log_dir, f"{datetime.now().strftime('%Y%m%d_%H%M')}.json")
+        summary = [{"repo": r["full_name"], "stars": r["stargazers_count"],
+                    "desc": r.get("description","")[:100],
+                    "html_url": r["html_url"]} for r in new_repos]
+        with open(log_path, "w", encoding="utf-8") as f:
+            json.dump(summary, f, ensure_ascii=False, indent=2)
+        print(f"📄 发现日志: {log_path}")
 
 
 if __name__ == "__main__":

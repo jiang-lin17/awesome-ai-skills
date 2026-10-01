@@ -1,0 +1,800 @@
+[
+  {
+    "repo": "affaan-m/ECC",
+    "stars": 270405,
+    "desc": "The agent harness performance optimization system. Skills, instincts, memory, security, and research",
+    "html_url": "https://github.com/affaan-m/ECC"
+  },
+  {
+    "repo": "bytedance/deer-flow",
+    "stars": 83292,
+    "desc": "An open-source long-horizon SuperAgent harness that researches, codes, and creates. With the help of",
+    "html_url": "https://github.com/bytedance/deer-flow"
+  },
+  {
+    "repo": "headroomlabs-ai/headroom",
+    "stars": 74212,
+    "desc": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 20% fewer tokens for c",
+    "html_url": "https://github.com/headroomlabs-ai/headroom"
+  },
+  {
+    "repo": "FoundationAgents/MetaGPT",
+    "stars": 70714,
+    "desc": "🌟 The Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming",
+    "html_url": "https://github.com/FoundationAgents/MetaGPT"
+  },
+  {
+    "repo": "calesthio/OpenMontage",
+    "stars": 62076,
+    "desc": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700",
+    "html_url": "https://github.com/calesthio/OpenMontage"
+  },
+  {
+    "repo": "crewAIInc/crewAI",
+    "stars": 59255,
+    "desc": "Framework for orchestrating role-playing, autonomous AI agents. By fostering collaborative intellige",
+    "html_url": "https://github.com/crewAIInc/crewAI"
+  },
+  {
+    "repo": "zylon-ai/private-gpt",
+    "stars": 57557,
+    "desc": "Complete API layer for private AI applications on local models: RAG, skills, tools, MCP, text-to-sql",
+    "html_url": "https://github.com/zylon-ai/private-gpt"
+  },
+  {
+    "repo": "hesreallyhim/awesome-claude-code",
+    "stars": 54881,
+    "desc": "A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the",
+    "html_url": "https://github.com/hesreallyhim/awesome-claude-code"
+  },
+  {
+    "repo": "ayghri/i-have-adhd",
+    "stars": 52556,
+    "desc": "A skill to stop your coding agent from burying the answer. ADHD-friendly output.",
+    "html_url": "https://github.com/ayghri/i-have-adhd"
+  },
+  {
+    "repo": "HKUDS/nanobot",
+    "stars": 48712,
+    "desc": "Ultra-lightweight, open-source, self-hosted personal AI agent framework in Python with WebUI, tools,",
+    "html_url": "https://github.com/HKUDS/nanobot"
+  },
+  {
+    "repo": "zhayujie/CowAgent",
+    "stars": 47195,
+    "desc": "Open-source personal AI assistant & Agent Harness. Plans tasks, runs tools and skills, self-evolves ",
+    "html_url": "https://github.com/zhayujie/CowAgent"
+  },
+  {
+    "repo": "sickn33/agentic-awesome-skills",
+    "stars": 47141,
+    "desc": "AAS Core is the local, agent-first control plane for complete catalog discovery, agent-owned selecti",
+    "html_url": "https://github.com/sickn33/agentic-awesome-skills"
+  },
+  {
+    "repo": "langchain-ai/langgraph",
+    "stars": 42550,
+    "desc": "Build resilient agents.",
+    "html_url": "https://github.com/langchain-ai/langgraph"
+  },
+  {
+    "repo": "AstrBotDevs/AstrBot",
+    "stars": 41275,
+    "desc": "AI Agent Assistant & development framework that integrates lots of IM platforms, LLMs, plugins and A",
+    "html_url": "https://github.com/AstrBotDevs/AstrBot"
+  },
+  {
+    "repo": "github/awesome-copilot",
+    "stars": 39582,
+    "desc": "Community-contributed instructions, agents, skills, and configurations to help you make the most of ",
+    "html_url": "https://github.com/github/awesome-copilot"
+  },
+  {
+    "repo": "volcengine/OpenViking",
+    "stars": 39073,
+    "desc": "Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.",
+    "html_url": "https://github.com/volcengine/OpenViking"
+  },
+  {
+    "repo": "VoltAgent/awesome-agent-skills",
+    "stars": 35085,
+    "desc": "A curated collection of 1000+ agent skills from official dev teams and the community, compatible wit",
+    "html_url": "https://github.com/VoltAgent/awesome-agent-skills"
+  },
+  {
+    "repo": "mukul975/Anthropic-Cybersecurity-Skills",
+    "stars": 33642,
+    "desc": "817 structured cybersecurity skills for AI agents · Mapped to 6 frameworks: MITRE ATT&CK, NIST CSF 2",
+    "html_url": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills"
+  },
+  {
+    "repo": "e2b-dev/awesome-ai-agents",
+    "stars": 30237,
+    "desc": "A list of AI autonomous agents",
+    "html_url": "https://github.com/e2b-dev/awesome-ai-agents"
+  },
+  {
+    "repo": "openai/openai-agents-python",
+    "stars": 29796,
+    "desc": "A lightweight, powerful framework for multi-agent workflows",
+    "html_url": "https://github.com/openai/openai-agents-python"
+  },
+  {
+    "repo": "OthmanAdi/planning-with-files",
+    "stars": 27223,
+    "desc": "Persistent file-based planning for AI coding agents and long-running tasks. Crash-proof markdown pla",
+    "html_url": "https://github.com/OthmanAdi/planning-with-files"
+  },
+  {
+    "repo": "alirezarezvani/claude-skills",
+    "stars": 27097,
+    "desc": "380 Claude Code skills & agent skills & plugins (30+ Agents, 70+ custom commands, 380+ skills, custo",
+    "html_url": "https://github.com/alirezarezvani/claude-skills"
+  },
+  {
+    "repo": "deepset-ai/haystack",
+    "stars": 26635,
+    "desc": "Open-source AI orchestration framework for building context-engineered, production-ready LLM applica",
+    "html_url": "https://github.com/deepset-ai/haystack"
+  },
+  {
+    "repo": "zai-org/Open-AutoGLM",
+    "stars": 26336,
+    "desc": "An Open Phone Agent Model & Framework. Unlocking the AI Phone for Everyone",
+    "html_url": "https://github.com/zai-org/Open-AutoGLM"
+  },
+  {
+    "repo": "agentskills/agentskills",
+    "stars": 25829,
+    "desc": "Specification and documentation for Agent Skills",
+    "html_url": "https://github.com/agentskills/agentskills"
+  },
+  {
+    "repo": "enescingoz/awesome-n8n-templates",
+    "stars": 25678,
+    "desc": "280+ free n8n automation templates — ready-to-use workflows for Gmail, Telegram, Slack, Discord, Wha",
+    "html_url": "https://github.com/enescingoz/awesome-n8n-templates"
+  },
+  {
+    "repo": "titanwings/distilly",
+    "stars": 25196,
+    "desc": "Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skil",
+    "html_url": "https://github.com/titanwings/distilly"
+  },
+  {
+    "repo": "KKKKhazix/khazix-skills",
+    "stars": 21088,
+    "desc": "数字生命卡兹克开源的 AI Skills 合集 | Agent Skills: leader（帮你定义目标）, neat-freak 洁癖, hv-analysis, khazix-writer & ",
+    "html_url": "https://github.com/KKKKhazix/khazix-skills"
+  },
+  {
+    "repo": "liyupi/ai-guide",
+    "stars": 20623,
+    "desc": "程序员鱼皮的 AI 资源大全 + Vibe Coding 零基础教程，分享 OpenClaw 保姆级教程、大模型玩法（DeepSeek / GPT / Gemini / Claude / GLM）、最",
+    "html_url": "https://github.com/liyupi/ai-guide"
+  },
+  {
+    "repo": "google/skills",
+    "stars": 20552,
+    "desc": "Agent Skills for Google products and technologies",
+    "html_url": "https://github.com/google/skills"
+  },
+  {
+    "repo": "tanweai/pua",
+    "stars": 19708,
+    "desc": "你是一个曾经被寄予厚望的 P8 级工程师。Anthropic 当初给你定级的时候，对你的期望是很高的。  一个agent使用的高能动性的skill。  Your AI has been placed ",
+    "html_url": "https://github.com/tanweai/pua"
+  },
+  {
+    "repo": "teng-lin/notebooklm-py",
+    "stars": 19583,
+    "desc": "Unofficial Python API and agentic skill for Google Gemini Notebook. Full programmatic access to Note",
+    "html_url": "https://github.com/teng-lin/notebooklm-py"
+  },
+  {
+    "repo": "agent0ai/agent-zero",
+    "stars": 19358,
+    "desc": "Agent Zero AI framework",
+    "html_url": "https://github.com/agent0ai/agent-zero"
+  },
+  {
+    "repo": "NVIDIA/SkillSpector",
+    "stars": 18861,
+    "desc": "Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, pr",
+    "html_url": "https://github.com/NVIDIA/SkillSpector"
+  },
+  {
+    "repo": "AgriciDaniel/claude-seo",
+    "stars": 18084,
+    "desc": "Universal SEO skill for Claude Code. 26 sub-skills + 19 sub-agents covering technical SEO, E-E-A-T, ",
+    "html_url": "https://github.com/AgriciDaniel/claude-seo"
+  },
+  {
+    "repo": "muratcankoylan/Agent-Skills-for-Context-Engineering",
+    "stars": 18053,
+    "desc": "A comprehensive collection of Agent Skills for context engineering, multi-agent architectures, and p",
+    "html_url": "https://github.com/muratcankoylan/Agent-Skills-for-Context-Engineering"
+  },
+  {
+    "repo": "microsoft/SkillOpt",
+    "stars": 17924,
+    "desc": "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agent",
+    "html_url": "https://github.com/microsoft/SkillOpt"
+  },
+  {
+    "repo": "camel-ai/camel",
+    "stars": 17799,
+    "desc": "🐫 CAMEL: The first and the best multi-agent framework. Finding the Scaling Law of Agents. https://ww",
+    "html_url": "https://github.com/camel-ai/camel"
+  },
+  {
+    "repo": "TransformerOptimus/SuperAGI",
+    "stars": 17702,
+    "desc": "<⚡️> SuperAGI - A dev-first open source autonomous AI agent framework. Enabling developers to build,",
+    "html_url": "https://github.com/TransformerOptimus/SuperAGI"
+  },
+  {
+    "repo": "wanshuiyin/Auto-claude-code-research-in-sleep",
+    "stars": 16865,
+    "desc": "ARIS ⚔️ (Auto-Research-In-Sleep) — Lightweight Markdown-only skills for autonomous ML research: cros",
+    "html_url": "https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep"
+  },
+  {
+    "repo": "googleapis/mcp-toolbox",
+    "stars": 16544,
+    "desc": "MCP Toolbox for Databases is an open source MCP server for databases.",
+    "html_url": "https://github.com/googleapis/mcp-toolbox"
+  },
+  {
+    "repo": "raga-ai-hub/RagaAI-Catalyst",
+    "stars": 16172,
+    "desc": "Python SDK for Agent AI Observability, Monitoring and Evaluation Framework. Includes features like a",
+    "html_url": "https://github.com/raga-ai-hub/RagaAI-Catalyst"
+  },
+  {
+    "repo": "pipecat-ai/pipecat",
+    "stars": 16115,
+    "desc": "Open Source framework for voice agents, multimodal apps, and realtime AI. Maintained by Daily and th",
+    "html_url": "https://github.com/pipecat-ai/pipecat"
+  },
+  {
+    "repo": "Arindam200/awesome-ai-apps",
+    "stars": 16017,
+    "desc": "A collection of projects showcasing RAG, agents, workflows, and other AI use cases",
+    "html_url": "https://github.com/Arindam200/awesome-ai-apps"
+  },
+  {
+    "repo": "livekit/agents",
+    "stars": 14437,
+    "desc": "A framework for building realtime voice AI agents 🤖🎙️📹 ",
+    "html_url": "https://github.com/livekit/agents"
+  },
+  {
+    "repo": "microsoft/agent-framework",
+    "stars": 13891,
+    "desc": "A framework for building, orchestrating and deploying AI agents and multi-agent workflows with suppo",
+    "html_url": "https://github.com/microsoft/agent-framework"
+  },
+  {
+    "repo": "0x4m4/hexstrike-ai",
+    "stars": 12273,
+    "desc": "HexStrike AI MCP Agents is an advanced MCP server that lets AI agents (Claude, GPT, Copilot, etc.) a",
+    "html_url": "https://github.com/0x4m4/hexstrike-ai"
+  },
+  {
+    "repo": "TEN-framework/ten-framework",
+    "stars": 11144,
+    "desc": " Open-source framework for conversational voice AI agents",
+    "html_url": "https://github.com/TEN-framework/ten-framework"
+  },
+  {
+    "repo": "huggingface/skills",
+    "stars": 11118,
+    "desc": "Give your agents the power of the Hugging Face ecosystem",
+    "html_url": "https://github.com/huggingface/skills"
+  },
+  {
+    "repo": "kangarooking/cangjie-skill",
+    "stars": 10790,
+    "desc": "把书、长视频、播客等高价值内容蒸馏成可执行的 Agent Skills（Distill high-value content from books, long-form videos, podcast",
+    "html_url": "https://github.com/kangarooking/cangjie-skill"
+  },
+  {
+    "repo": "awesome-opencode/awesome-opencode",
+    "stars": 10440,
+    "desc": "A curated list of awesome plugins, themes, agents, projects, and resources for https://opencode.ai",
+    "html_url": "https://github.com/awesome-opencode/awesome-opencode"
+  },
+  {
+    "repo": "omnigent-ai/omnigent",
+    "stars": 10390,
+    "desc": "Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Curs",
+    "html_url": "https://github.com/omnigent-ai/omnigent"
+  },
+  {
+    "repo": "Agents365-ai/drawio-skill",
+    "stars": 9786,
+    "desc": "Agent skill that turns natural language, code, Terraform/K8s, SQL, OpenAPI, AsyncAPI, Protobuf and G",
+    "html_url": "https://github.com/Agents365-ai/drawio-skill"
+  },
+  {
+    "repo": "apify/apify-mcp-server",
+    "stars": 9206,
+    "desc": "The Apify MCP server enables your AI agents to extract data from social media, search engines, maps,",
+    "html_url": "https://github.com/apify/apify-mcp-server"
+  },
+  {
+    "repo": "MervinPraison/PraisonAI",
+    "stars": 9115,
+    "desc": "PraisonAI 🦞 — Hire a 24/7 AI Workforce. Stop writing boilerplate and start shipping autonomous self-",
+    "html_url": "https://github.com/MervinPraison/PraisonAI"
+  },
+  {
+    "repo": "WangRongsheng/awesome-LLM-resources",
+    "stars": 8997,
+    "desc": "🧑‍🚀 全世界最好的LLM资料总结（多模态生成、Agent、辅助编程、AI审稿、数据处理、模型训练、模型推理、o1 模型、MCP、小语言模型、视觉语言模型） | Summary of the worl",
+    "html_url": "https://github.com/WangRongsheng/awesome-LLM-resources"
+  },
+  {
+    "repo": "nexu-io/html-anything",
+    "stars": 8986,
+    "desc": "✨ The agentic HTML editor — your local AI agent writes the HTML, you ship it. 🚀 75 Skills × 9 Surfac",
+    "html_url": "https://github.com/nexu-io/html-anything"
+  },
+  {
+    "repo": "google-labs-code/stitch-skills",
+    "stars": 8409,
+    "desc": "A library of Agent Skills designed to work with the Stitch MCP server. Each skill follows the Agent ",
+    "html_url": "https://github.com/google-labs-code/stitch-skills"
+  },
+  {
+    "repo": "genspark-ai/genoffice",
+    "stars": 8297,
+    "desc": "Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built",
+    "html_url": "https://github.com/genspark-ai/genoffice"
+  },
+  {
+    "repo": "jnMetaCode/superpowers-zh",
+    "stars": 8251,
+    "desc": "🦸 AI 编程超能力 · 中文增强版 — superpowers（250k+ ⭐）完整汉化 + 4 个中国原创 skills，让 Claude Code / Copilot CLI / Hermes ",
+    "html_url": "https://github.com/jnMetaCode/superpowers-zh"
+  },
+  {
+    "repo": "2FastLabs/agent-squad",
+    "stars": 7779,
+    "desc": "Flexible and powerful framework for managing multiple AI agents and handling complex conversations",
+    "html_url": "https://github.com/2FastLabs/agent-squad"
+  },
+  {
+    "repo": "HKUDS/OpenSpace",
+    "stars": 7741,
+    "desc": "\"OpenSpace: The Skill Management Layer for AI Agents\" -- https://open-space.cloud/",
+    "html_url": "https://github.com/HKUDS/OpenSpace"
+  },
+  {
+    "repo": "refly-ai/refly",
+    "stars": 7534,
+    "desc": "The first open-source agent skills builder. Define skills by vibe workflow, run on Claude Code, Curs",
+    "html_url": "https://github.com/refly-ai/refly"
+  },
+  {
+    "repo": "Gentleman-Programming/gentle-ai",
+    "stars": 7442,
+    "desc": "Gentle-AI configures the AI coding agents you already use: Claude Code, Cursor, OpenCode, Codex, Pi,",
+    "html_url": "https://github.com/Gentleman-Programming/gentle-ai"
+  },
+  {
+    "repo": "WenyuChiou/awesome-agentic-ai-zh",
+    "stars": 7238,
+    "desc": "A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent sys",
+    "html_url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh"
+  },
+  {
+    "repo": "kyegomez/swarms",
+    "stars": 7227,
+    "desc": "The Enterprise-Grade Multi-Agent Orchestration Framework. Website: https://swarms.ai",
+    "html_url": "https://github.com/kyegomez/swarms"
+  },
+  {
+    "repo": "tech-leads-club/agent-skills",
+    "stars": 7024,
+    "desc": "The secure, validated skill registry for professional AI coding agents. Extend Antigravity, Claude C",
+    "html_url": "https://github.com/tech-leads-club/agent-skills"
+  },
+  {
+    "repo": "Tencent/AI-Infra-Guard",
+    "stars": 6653,
+    "desc": "A full-stack AI Red Teaming platform securing AI ecosystems via Agent Scan, Skills Scan, MCP scan, A",
+    "html_url": "https://github.com/Tencent/AI-Infra-Guard"
+  },
+  {
+    "repo": "MengTo/Skills",
+    "stars": 6536,
+    "desc": "Agent skills for designers and builders using Codex, Claude, Cursor, and other AI coding agents",
+    "html_url": "https://github.com/MengTo/Skills"
+  },
+  {
+    "repo": "lavague-ai/LaVague",
+    "stars": 6394,
+    "desc": "Large Action Model framework to develop AI Web Agents",
+    "html_url": "https://github.com/lavague-ai/LaVague"
+  },
+  {
+    "repo": "dontriskit/awesome-ai-system-prompts",
+    "stars": 6231,
+    "desc": "🧠 Curated collection of system prompts for top AI tools. Perfect for AI agent builders and prompt en",
+    "html_url": "https://github.com/dontriskit/awesome-ai-system-prompts"
+  },
+  {
+    "repo": "Coding-Solo/godot-mcp",
+    "stars": 5898,
+    "desc": "MCP server for interfacing with Godot game engine. Provides tools for launching the editor, running ",
+    "html_url": "https://github.com/Coding-Solo/godot-mcp"
+  },
+  {
+    "repo": "AgentOps-AI/agentops",
+    "stars": 5861,
+    "desc": "Python SDK for AI agent monitoring, LLM cost tracking, benchmarking, and more. Integrates with most ",
+    "html_url": "https://github.com/AgentOps-AI/agentops"
+  },
+  {
+    "repo": "nanbingxyz/5ire",
+    "stars": 5365,
+    "desc": "5ire is a cross-platform desktop AI assistant, MCP client. It compatible with major service provider",
+    "html_url": "https://github.com/nanbingxyz/5ire"
+  },
+  {
+    "repo": "superduper-io/superduper",
+    "stars": 5329,
+    "desc": "Superduper: End-to-end framework for building custom AI applications and agents.",
+    "html_url": "https://github.com/superduper-io/superduper"
+  },
+  {
+    "repo": "xingkongliang/skills-manager",
+    "stars": 5321,
+    "desc": "A lightweight desktop app to manage, sync, and organize AI agent skills across 50+ coding tools — Cl",
+    "html_url": "https://github.com/xingkongliang/skills-manager"
+  },
+  {
+    "repo": "nibzard/awesome-agentic-patterns",
+    "stars": 5008,
+    "desc": "A curated catalogue of awesome agentic AI patterns",
+    "html_url": "https://github.com/nibzard/awesome-agentic-patterns"
+  },
+  {
+    "repo": "aipotheosis-labs/aci",
+    "stars": 4905,
+    "desc": "ACI.dev is the open source tool-calling platform that hooks up 600+ tools into any agentic IDE or cu",
+    "html_url": "https://github.com/aipotheosis-labs/aci"
+  },
+  {
+    "repo": "ai-boost/awesome-harness-engineering",
+    "stars": 4613,
+    "desc": "Awesome list for AI agent harness engineering: tools, patterns, evals, memory, MCP, permissions, obs",
+    "html_url": "https://github.com/ai-boost/awesome-harness-engineering"
+  },
+  {
+    "repo": "Pimzino/spec-workflow-mcp",
+    "stars": 4297,
+    "desc": "A Model Context Protocol (MCP) server that provides structured spec-driven development workflow tool",
+    "html_url": "https://github.com/Pimzino/spec-workflow-mcp"
+  },
+  {
+    "repo": "CodeGraphContext/CodeGraphContext",
+    "stars": 4240,
+    "desc": "An MCP server plus a CLI tool that indexes local code into a graph database to provide context to AI",
+    "html_url": "https://github.com/CodeGraphContext/CodeGraphContext"
+  },
+  {
+    "repo": "JimLiu/baoyu-design",
+    "stars": 4230,
+    "desc": "Run Claude Design locally as an Agent Skill — Cursor, Claude Code & more. Produce polished UI mockup",
+    "html_url": "https://github.com/JimLiu/baoyu-design"
+  },
+  {
+    "repo": "SylphAI-Inc/AdalFlow",
+    "stars": 4221,
+    "desc": "AdalFlow: The library to build & auto-optimize LLM applications.",
+    "html_url": "https://github.com/SylphAI-Inc/AdalFlow"
+  },
+  {
+    "repo": "bethington/ghidra-mcp",
+    "stars": 4076,
+    "desc": "Ghidra MCP Server — 200+ MCP tools for AI-powered reverse engineering. GUI plugin + headless server,",
+    "html_url": "https://github.com/bethington/ghidra-mcp"
+  },
+  {
+    "repo": "bostrot/wslmanager",
+    "stars": 4011,
+    "desc": "GUI for the Windows Subsystem for Linux — and native Linux/macOS VMs on Mac. Install, back up, move ",
+    "html_url": "https://github.com/bostrot/wslmanager"
+  },
+  {
+    "repo": "mergisi/awesome-openclaw-agents",
+    "stars": 3995,
+    "desc": "162 production-ready AI agent templates for OpenClaw. SOUL.md configs across 19 categories. Submit y",
+    "html_url": "https://github.com/mergisi/awesome-openclaw-agents"
+  },
+  {
+    "repo": "Goochbeater/Spiritual-Spell-Red-Teaming",
+    "stars": 3745,
+    "desc": "A repo for jailbreaking various LLMs, mainly Claude",
+    "html_url": "https://github.com/Goochbeater/Spiritual-Spell-Red-Teaming"
+  },
+  {
+    "repo": "liyupi/free-programming-resources",
+    "stars": 3741,
+    "desc": "2026 年最新的免费编程资源大全，持续更新！🔥 覆盖各种语言和方向（Java / Python / C++ / JavaScript / TypeScript / Golang / 前端 / 后端 ",
+    "html_url": "https://github.com/liyupi/free-programming-resources"
+  },
+  {
+    "repo": "microsoft/mcp",
+    "stars": 3724,
+    "desc": "Catalog of official Microsoft MCP (Model Context Protocol) server implementations for AI-powered dat",
+    "html_url": "https://github.com/microsoft/mcp"
+  },
+  {
+    "repo": "gotalab/cc-sdd",
+    "stars": 3699,
+    "desc": "Turn approved specs into long-running autonomous implementation. A minimal, adaptable SDD harness wi",
+    "html_url": "https://github.com/gotalab/cc-sdd"
+  },
+  {
+    "repo": "opensumi/core",
+    "stars": 3656,
+    "desc": "A framework helps you quickly build AI Native IDE products. MCP Client, supports Model Context Proto",
+    "html_url": "https://github.com/opensumi/core"
+  },
+  {
+    "repo": "samber/cc-skills-golang",
+    "stars": 3373,
+    "desc": "🧑‍🎨 A collection of Golang agentic skills that works",
+    "html_url": "https://github.com/samber/cc-skills-golang"
+  },
+  {
+    "repo": "Meirtz/Awesome-Context-Engineering",
+    "stars": 3317,
+    "desc": " 🔥 Comprehensive survey on Context Engineering: from prompt engineering to production-grade AI syste",
+    "html_url": "https://github.com/Meirtz/Awesome-Context-Engineering"
+  },
+  {
+    "repo": "taylorwilsdon/google_workspace_mcp",
+    "stars": 3270,
+    "desc": "Control Gmail, Google Calendar, Docs, Sheets, Slides, Chat, Forms, Tasks, Search & Drive with AI - C",
+    "html_url": "https://github.com/taylorwilsdon/google_workspace_mcp"
+  },
+  {
+    "repo": "taishi-i/awesome-ChatGPT-repositories",
+    "stars": 3270,
+    "desc": "A curated list of open source GitHub repositories related to ChatGPT, the OpenAI API, and Codex. Sea",
+    "html_url": "https://github.com/taishi-i/awesome-ChatGPT-repositories"
+  },
+  {
+    "repo": "xpf0000/FlyEnv",
+    "stars": 3249,
+    "desc": "Native local development environment for Windows, macOS & Linux. A modern alternative to XAMPP, MAMP",
+    "html_url": "https://github.com/xpf0000/FlyEnv"
+  },
+  {
+    "repo": "cirosantilli/china-dictatorship",
+    "stars": 3240,
+    "desc": "反中共政治宣传库。Anti Chinese government propaganda. 住在中国真名用户的网友请别给星星，不然你要被警察请喝茶。常见问答集，新闻集和饭店和音乐建议。卐习万岁卐。冠状病",
+    "html_url": "https://github.com/cirosantilli/china-dictatorship"
+  },
+  {
+    "repo": "av/harbor",
+    "stars": 3236,
+    "desc": "Stop configuring your AI stack. Start using it. One command brings a complete pre-wired LLM stack wi",
+    "html_url": "https://github.com/av/harbor"
+  },
+  {
+    "repo": "irinabuht12-oss/google-ads-meta-ads-mcp",
+    "stars": 3230,
+    "desc": "Google Ads MCP server + Meta Ads MCP (Facebook Ads MCP) + GA4 + Search Console in one hosted remote ",
+    "html_url": "https://github.com/irinabuht12-oss/google-ads-meta-ads-mcp"
+  },
+  {
+    "repo": "off-grid-ai/OGAM",
+    "stars": 3190,
+    "desc": "The Swiss Army Knife of Offline AI. Chat, see, speak, and generate images on your phone or Mac — GGU",
+    "html_url": "https://github.com/off-grid-ai/OGAM"
+  },
+  {
+    "repo": "NarratorAI-Studio/narrator-ai-cli-skill",
+    "stars": 3019,
+    "desc": "AI 解说大师 — Agent skill；封装 narrator-ai-cli 供 Claude/Codex 等工具调用",
+    "html_url": "https://github.com/NarratorAI-Studio/narrator-ai-cli-skill"
+  },
+  {
+    "repo": "ScrapeCreators/social-media-research-skills",
+    "stars": 3007,
+    "desc": "AI agent skills for social media research. Outlier posts, comment mining, competitor teardowns, ad l",
+    "html_url": "https://github.com/ScrapeCreators/social-media-research-skills"
+  },
+  {
+    "repo": "bergside/awesome-design-skills",
+    "stars": 2996,
+    "desc": "List of 67 awesome DESIGN.md and SKILL.md design skill files for agentic tools like Claude Design, G",
+    "html_url": "https://github.com/bergside/awesome-design-skills"
+  },
+  {
+    "repo": "rohitg00/pro-workflow",
+    "stars": 2896,
+    "desc": "Claude Code learns from your corrections: self-correcting memory that compounds over 50+ sessions. C",
+    "html_url": "https://github.com/rohitg00/pro-workflow"
+  },
+  {
+    "repo": "ciembor/agent-rules-books",
+    "stars": 2893,
+    "desc": "AGENTS.md rules / skills for AI coding agents: Codex, Cursor & Claude Code. Inspired by Clean Code, ",
+    "html_url": "https://github.com/ciembor/agent-rules-books"
+  },
+  {
+    "repo": "samugit83/redamon",
+    "stars": 2880,
+    "desc": "Open-source, self-hosted AI penetration testing framework: maps your attack surface into a graph, au",
+    "html_url": "https://github.com/samugit83/redamon"
+  },
+  {
+    "repo": "kyrolabs/awesome-agents",
+    "stars": 2872,
+    "desc": "🤖 Awesome list of AI Agents",
+    "html_url": "https://github.com/kyrolabs/awesome-agents"
+  },
+  {
+    "repo": "aws/agent-toolkit-for-aws",
+    "stars": 2769,
+    "desc": "Official, AWS-supported MCP servers, skills, and plugins to help AI agents build on AWS",
+    "html_url": "https://github.com/aws/agent-toolkit-for-aws"
+  },
+  {
+    "repo": "hi-godot/godot-ai",
+    "stars": 2722,
+    "desc": "Production-grade MCP server and AI tools for the Godot engine. A Snap to install. Totally free and f",
+    "html_url": "https://github.com/hi-godot/godot-ai"
+  },
+  {
+    "repo": "ANative-Lab/Awesome-Self-Evolving-Agents",
+    "stars": 2497,
+    "desc": "📖 A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and L",
+    "html_url": "https://github.com/ANative-Lab/Awesome-Self-Evolving-Agents"
+  },
+  {
+    "repo": "Astro-Han/karpathy-llm-wiki",
+    "stars": 2394,
+    "desc": "Agent Skills-compatible LLM wiki for Claude Code, Cursor, and Codex. Build a Karpathy-style knowledg",
+    "html_url": "https://github.com/Astro-Han/karpathy-llm-wiki"
+  },
+  {
+    "repo": "study8677/awesome-architecture",
+    "stars": 2375,
+    "desc": "🧭 Architecture-first system design: 26 bilingual tutorials, 25 architecture templates, and 6 end-to-",
+    "html_url": "https://github.com/study8677/awesome-architecture"
+  },
+  {
+    "repo": "agentuniverse-ai/agentUniverse",
+    "stars": 2374,
+    "desc": "agentUniverse is a LLM multi-agent framework that allows developers to easily build multi-agent appl",
+    "html_url": "https://github.com/agentuniverse-ai/agentUniverse"
+  },
+  {
+    "repo": "yaklang/hack-skills",
+    "stars": 2343,
+    "desc": "Helping AI Agent become an awesome practical hacker!",
+    "html_url": "https://github.com/yaklang/hack-skills"
+  },
+  {
+    "repo": "wondelai/skills",
+    "stars": 2298,
+    "desc": "Wondel.ai Agent Skills — Business, Marketing, UX & Coding Frameworks from Bestselling Books. 50 skil",
+    "html_url": "https://github.com/wondelai/skills"
+  },
+  {
+    "repo": "codejunkie99/agentic-stack",
+    "stars": 2288,
+    "desc": "One brain, many harnesses. Portable .agent/ folder (memory + skills + protocols) that plugs into Cla",
+    "html_url": "https://github.com/codejunkie99/agentic-stack"
+  },
+  {
+    "repo": "jamubc/gemini-mcp-tool",
+    "stars": 2286,
+    "desc": "MCP server that enables AI assistants to interact with Google Gemini CLI, leveraging Gemini's massiv",
+    "html_url": "https://github.com/jamubc/gemini-mcp-tool"
+  },
+  {
+    "repo": "slavakurilyak/awesome-ai-agents",
+    "stars": 2286,
+    "desc": "Awesome list of 300+ agentic AI resources",
+    "html_url": "https://github.com/slavakurilyak/awesome-ai-agents"
+  },
+  {
+    "repo": "stacklok/toolhive",
+    "stars": 2229,
+    "desc": "ToolHive is an enterprise-grade platform for running and managing Model Context Protocol (MCP) serve",
+    "html_url": "https://github.com/stacklok/toolhive"
+  },
+  {
+    "repo": "Appllama/appllama-skills",
+    "stars": 2220,
+    "desc": "A builder, not just a researcher. Agent skills that turn top-grossing app patterns into native-quali",
+    "html_url": "https://github.com/Appllama/appllama-skills"
+  },
+  {
+    "repo": "gege-circle/.github",
+    "stars": 2033,
+    "desc": "这里是GitHub的草场，也是戈戈圈爱好者的交流地，主要讨论动漫、游戏、科技、人文、生活等所有话题，欢迎各位小伙伴们在此讨论趣事。This is GitHub grassland, and the c",
+    "html_url": "https://github.com/gege-circle/.github"
+  },
+  {
+    "repo": "vonzosten/awesome-LangGraph",
+    "stars": 2015,
+    "desc": "An index of the LangChain + LangGraph ecosystem: concepts, projects, tools, templates, and guides fo",
+    "html_url": "https://github.com/vonzosten/awesome-LangGraph"
+  },
+  {
+    "repo": "jim-schwoebel/awesome_ai_agents",
+    "stars": 1998,
+    "desc": "🤖 A comprehensive list of 1,500+ resources and tools related to AI agents.",
+    "html_url": "https://github.com/jim-schwoebel/awesome_ai_agents"
+  },
+  {
+    "repo": "MicrosoftDocs/mcp",
+    "stars": 1922,
+    "desc": "Official Microsoft Learn MCP Server and CLI tool – powering LLMs and AI agents with real-time, trust",
+    "html_url": "https://github.com/MicrosoftDocs/mcp"
+  },
+  {
+    "repo": "caramaschiHG/awesome-ai-agents-2026",
+    "stars": 1915,
+    "desc": "🤖 The most comprehensive list of AI agents, frameworks & tools in 2026. 300+ resources · 20+ categor",
+    "html_url": "https://github.com/caramaschiHG/awesome-ai-agents-2026"
+  },
+  {
+    "repo": "zchoi/Awesome-Embodied-Robotics-and-Agent",
+    "stars": 1894,
+    "desc": "This is a curated list of \"Embodied AI or robot with Large Language Models\" research. Watch this rep",
+    "html_url": "https://github.com/zchoi/Awesome-Embodied-Robotics-and-Agent"
+  },
+  {
+    "repo": "XiaomingX/indie-hacker-tools-plus",
+    "stars": 1870,
+    "desc": "为独立开发者准备的精选技术栈和工具仓库来了！这里有你最需要的工具，帮你提升开发效率、节约成本，最重要的是——这些工具都是市场上热门的，经过验证的。🚀A curated collection of te",
+    "html_url": "https://github.com/XiaomingX/indie-hacker-tools-plus"
+  },
+  {
+    "repo": "timescale/pg-aiguide",
+    "stars": 1852,
+    "desc": "MCP server and Claude plugin for Postgres skills and documentation. Helps AI coding tools generate b",
+    "html_url": "https://github.com/timescale/pg-aiguide"
+  },
+  {
+    "repo": "VoltAgent/awesome-ai-agent-papers",
+    "stars": 1810,
+    "desc": "A curated collection of AI agent research papers released in 2026, covering agent engineering, memor",
+    "html_url": "https://github.com/VoltAgent/awesome-ai-agent-papers"
+  },
+  {
+    "repo": "OpenOSINT/OpenOSINT",
+    "stars": 1677,
+    "desc": "AI-powered OSINT agent with interactive REPL, MCP server, and CLI. 20 tools. Works with Claude, GPT-",
+    "html_url": "https://github.com/OpenOSINT/OpenOSINT"
+  },
+  {
+    "repo": "isaacphi/mcp-language-server",
+    "stars": 1599,
+    "desc": "mcp-language-server gives MCP enabled clients access semantic tools like get definition, references,",
+    "html_url": "https://github.com/isaacphi/mcp-language-server"
+  },
+  {
+    "repo": "Dataojitori/nocturne_memory",
+    "stars": 1372,
+    "desc": "A lightweight, rollbackable, and visual Long-Term Memory Server for MCP Agents. Say goodbye to Vecto",
+    "html_url": "https://github.com/Dataojitori/nocturne_memory"
+  },
+  {
+    "repo": "2akouwu/reverify",
+    "stars": 1252,
+    "desc": "Stop your AI from making things up — it proposes, deterministic tools decide, every claim checked ag",
+    "html_url": "https://github.com/2akouwu/reverify"
+  }
+]
