@@ -22,6 +22,10 @@ from datetime import datetime
 POLLINATIONS_URL = "https://text.pollinations.ai/openai"
 MODEL = "deepseek"  # DeepSeek V3.1，中文好
 
+# ========== 关键参数 ==========
+BATCH_SIZE = 20        # 每次最多处理几个（防止 Actions 跑太久超时）
+REQUEST_INTERVAL = 5   # 每次请求间隔秒数（Pollinations 匿名限流 ~1/15s，5s 够了）
+
 # ========== Prompt 模板 ==========
 SYSTEM_PROMPT = """\
 你是一个给小白讲清楚 AI 工具的技术科普作者。
@@ -44,8 +48,9 @@ Star 数：{stars}
 """
 
 
-def call_pollinations(name, desc, cat, stars, max_retries=3):
-    """调 Pollinations.ai 免费 LLM，返回 (shortDesc, useCase) 或 None"""
+def call_pollinations(name, desc, cat, stars):
+    """调 Pollinations.ai 免费 LLM，返回 (shortDesc, useCase) 或 None
+    不重试，失败就失败，快速跳过"""
     payload = {
         "model": MODEL,
         "messages": [
@@ -110,10 +115,14 @@ def main():
     with open(data_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # 找没有 useCase 的（就是自动发现新增的）
-    need_gen = [s for s in data["skills"] if not s.get("useCase") or len(s.get("useCase", "")) < 5]
+    # 找没有 useCase 的（就是自动发现新增的），取前 BATCH_SIZE 个
+    need_gen_all = [s for s in data["skills"] if not s.get("useCase") or len(s.get("useCase", "")) < 5]
+    need_gen = need_gen_all[:BATCH_SIZE]
+    skipped = len(need_gen_all) - len(need_gen)
     print(f"\n📚 总 Skill: {len(data['skills'])}")
-    print(f"🎯 需要生成大白话: {len(need_gen)} 个")
+    print(f"🎯 本次生成: {len(need_gen)} 个（共 {len(need_gen_all)} 个待生成，分批次）")
+    if skipped:
+        print(f"⏭️  本次跳过: {skipped} 个（下次再处理）")
 
     if not need_gen:
         print("\n✅ 全部都有大白话了！无事可做。")
@@ -146,10 +155,9 @@ def main():
             failed.append(s["id"])
             print(f"  ❌ 生成失败，保留原文")
 
-        # 限流间隔（最后一个就不用等了）
+        # 限流间隔
         if i < total:
-            print(f"  ⏳ 等 15s 让 Pollinations 喘口气...")
-            time.sleep(15)
+            time.sleep(REQUEST_INTERVAL)
 
     # 保存
     data["skills"].sort(key=lambda x: x.get("stars", 0), reverse=True)
