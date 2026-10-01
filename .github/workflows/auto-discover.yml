@@ -1,10 +1,10 @@
-name: Auto-discover New AI Skills
+name: Auto-discover + AI Describe New Skills
 
 # 每周一凌晨 02:30 UTC（北京时间 10:30）自动跑
 on:
   schedule:
     - cron: "30 2 * * 1"
-  workflow_dispatch:  # 也可以在 Actions 页面手动点 Run workflow
+  workflow_dispatch:  # 也可以手动点 Run workflow
 
 permissions:
   contents: write
@@ -21,39 +21,45 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: 🔍 Auto-discover new skills
+      # ========== 阶段 1：自动发现新 Skill ==========
+      - name: 🔍 Discover new skills from GitHub
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python scripts/auto_discover.py
 
+      # ========== 阶段 2：AI 自动生成大白话 ==========
+      # Pollinations.ai 免费 LLM，匿名 ~1次/15s
+      # 10 个新 Skill ≈ 2.5 分钟，50 个 ≈ 12.5 分钟
+      - name: 🤖 AI generate plain-language descriptions
+        run: python scripts/generate_noob_desc.py
+
+      # ========== 阶段 3：提交更新 ==========
       - name: 📦 Commit and push
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          
-          # 只在有变化时才 commit
+
+          # 没变化就不 commit
           if git diff --quiet docs/data/skills.json; then
-            echo "No new skills found. Nothing to commit."
+            echo "No changes. Nothing to commit."
             exit 0
           fi
-          
+
           git add docs/data/skills.json
           git add discovery-logs/ || true
-          git commit -m "🤖 Auto-discovered new AI skills ($(date +%Y-%m-%d))"
 
-          # 用 PAT 推（如果配置了），否则用默认 token
-          if [ -n "${{ secrets.GITHUB_PAT }}" ]; then
-            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git
-          fi
-          
+          TIMESTAMP=$(date -u '+%Y-%m-%d %H:%M UTC')
+          git commit -m "🤖 Auto-discover + AI describe ($TIMESTAMP)"
           git push origin main
 
       - name: 📊 Summary
         if: always()
         run: |
-          echo "## 🤖 Auto-discover Run Summary" >> $GITHUB_STEP_SUMMARY
+          echo "## 🤖 Weekly Auto-Run Summary" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "- **Repo:** ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
           echo "- **Time:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "- **Discover phase:** Scanned 6 GitHub Search queries" >> $GITHUB_STEP_SUMMARY
+          echo "- **AI Describe phase:** Pollinations.ai free LLM" >> $GITHUB_STEP_SUMMARY
           echo "" >> $GITHUB_STEP_SUMMARY
-          echo "Check the diff above for newly discovered skills!" >> $GITHUB_STEP_SUMMARY
+          echo "Diff above shows what changed!" >> $GITHUB_STEP_SUMMARY
