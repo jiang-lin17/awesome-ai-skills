@@ -25,7 +25,7 @@ PROJECTS = [
     ("obra/superpowers", "superpowers"),
     ("JuliusBrussee/caveman", "caveman"),
     ("addyosmani/agent-skills", "addyosmani/agent-skills"),
-    ("nicbarker/scientific-agent-skills", "scientific-agent-skills"),
+    ("K-Dense-AI/scientific-agent-skills", "scientific-agent-skills"),
     ("anthropics/skills", "anthropics/skills"),
     ("vercel-labs/skills", "Vercel find-skills"),
 
