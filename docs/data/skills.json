@@ -1139,6 +1139,30 @@
       "repoUrl": "https://github.com/TryCua/cua"
     },
     {
+      "id": "promptfoo",
+      "category": "vertical",
+      "name": "promptfoo",
+      "owner": "promptfoo",
+      "repo": "promptfoo/promptfoo",
+      "stars": 25609,
+      "emoji": "🧪",
+      "shortDesc": "被 OpenAI 收购！Prompt 测试 + AI 红队旗舰工具",
+      "descEn": "Acquired by OpenAI! Prompt testing + AI red team flagship tool",
+      "features": [
+        "MIT 开源",
+        "CI/CD 集成",
+        "15 万+ 开发者",
+        "OpenAI 内部在用"
+      ],
+      "install": "npm install -g promptfoo",
+      "usage": "npm 全局安装后 promptfoo eval 运行红队测试",
+      "compatible": [
+        "Node.js",
+        "OpenAI 背书"
+      ],
+      "repoUrl": "https://github.com/promptfoo/promptfoo"
+    },
+    {
       "id": "paseo",
       "category": "framework",
       "name": "Paseo",
@@ -1185,6 +1209,30 @@
         "Copilot"
       ],
       "repoUrl": "https://github.com/lsdefine/GenericAgent"
+    },
+    {
+      "id": "NVIDIA/garak",
+      "category": "vertical",
+      "name": "Garak",
+      "owner": "NVIDIA",
+      "repo": "NVIDIA/garak",
+      "stars": 9396,
+      "emoji": "🛡️",
+      "shortDesc": "NVIDIA 出品 LLM 漏洞扫描器——越狱、提示注入、幻觉、数据泄露全测",
+      "descEn": "NVIDIA's LLM vulnerability scanner — jailbreaks, prompt injection, hallucination, data leakage",
+      "features": [
+        "~100 攻击向量",
+        "自动越狱测试",
+        "Prompt Injection 检测",
+        "AVID 社区漏洞共享"
+      ],
+      "install": "pip install garak",
+      "usage": "pip 安装后 garak --list-probes 看所有攻击向量",
+      "compatible": [
+        "Python",
+        "跨平台"
+      ],
+      "repoUrl": "https://github.com/NVIDIA/garak"
     },
     {
       "id": "plannotator",
@@ -1256,6 +1304,224 @@
         "TypeScript"
       ],
       "repoUrl": "https://github.com/mattpocock/ts-reset"
+    },
+    {
+      "id": "giskard",
+      "category": "vertical",
+      "name": "Giskard",
+      "owner": "giskard-ai",
+      "repo": "giskard-ai/giskard-oss",
+      "stars": 5847,
+      "emoji": "🎯",
+      "shortDesc": "AI 质量保证 + 自动化红队——Prompt Injection 探针自动生成",
+      "descEn": "AI QA + automated red team — auto-generate prompt injection probes",
+      "features": [
+        "自动对抗测试",
+        "Agent 审计",
+        "RAG 质量验证",
+        "Python"
+      ],
+      "install": "pip install giskard",
+      "usage": "pip 安装后 giskard scan 一键扫描",
+      "compatible": [
+        "Python",
+        "跨平台"
+      ],
+      "repoUrl": "https://github.com/giskard-ai/giskard-oss"
+    },
+    {
+      "id": "PyRIT",
+      "category": "vertical",
+      "name": "PyRIT (Microsoft)",
+      "owner": "microsoft",
+      "repo": "microsoft/PyRIT",
+      "stars": 4563,
+      "emoji": "🔴",
+      "shortDesc": "微软 AI 红队工具——多轮对抗 + 多模态攻击编排",
+      "descEn": "Microsoft's AI red team tool — multi-turn adversarial testing, multi-modal",
+      "features": [
+        "多轮越狱",
+        "多模态攻击",
+        "攻击剧本编排",
+        "零信任身份"
+      ],
+      "install": "pip install pyrit",
+      "usage": "pip 安装后运行预构建的攻击剧本",
+      "compatible": [
+        "Python",
+        "微软出品"
+      ],
+      "repoUrl": "https://github.com/microsoft/PyRIT"
+    },
+    {
+      "id": "PurpleLlama",
+      "category": "vertical",
+      "name": "PurpleLlama (Meta)",
+      "owner": "facebookresearch",
+      "repo": "facebookresearch/PurpleLlama",
+      "stars": 4410,
+      "emoji": "🟪",
+      "shortDesc": "Meta 出品 LLM 安全评估框架——越狱测试 + 运行时防护",
+      "descEn": "Meta's LLM security eval framework — jailbreak testing + runtime guardrails",
+      "features": [
+        "内容审核器",
+        "Prompt Injection 防火墙",
+        "恶意代码扫描",
+        "安全基准测试集"
+      ],
+      "install": "pip install llama-stack",
+      "usage": "pip 安装后调用安全评估模块",
+      "compatible": [
+        "Python",
+        "Meta 出品"
+      ],
+      "repoUrl": "https://github.com/facebookresearch/PurpleLlama"
+    },
+    {
+      "id": "llm-guard",
+      "category": "vertical",
+      "name": "LLM Guard",
+      "owner": "protectai",
+      "repo": "protectai/llm-guard",
+      "stars": 3213,
+      "emoji": "🧱",
+      "shortDesc": "LLM 交互安全工具包——输入输出双向防护",
+      "descEn": "Security toolkit for LLM interactions — input + output scanning",
+      "features": [
+        "输入净化",
+        "有害语言检测",
+        "数据泄露防护",
+        "Prompt Injection 抵抗"
+      ],
+      "install": "pip install llm-guard",
+      "usage": "pip 安装后 import 使用",
+      "compatible": [
+        "Python",
+        "跨平台"
+      ],
+      "repoUrl": "https://github.com/protectai/llm-guard"
+    },
+    {
+      "id": "snyk-agent-scan",
+      "category": "vertical",
+      "name": "Snyk Agent Scan",
+      "owner": "snyk",
+      "repo": "snyk/agent-scan",
+      "stars": 3103,
+      "emoji": "🔒",
+      "shortDesc": "AI Agent / MCP Server / Skill 安全扫描——15+ 风险类型",
+      "descEn": "Security scanner for AI agents, MCP servers, and agent skills",
+      "features": [
+        "15+ 风险类型",
+        "自动发现本地 Agent 配置",
+        "Prompt Injection 检测",
+        "Snyk 出品"
+      ],
+      "install": "npx snyk-agent-scan scan",
+      "usage": "npx 一键扫描本地 Agent 配置",
+      "compatible": [
+        "Claude Code",
+        "Cursor",
+        "Windsurf",
+        "Node.js"
+      ],
+      "repoUrl": "https://github.com/snyk/agent-scan"
+    },
+    {
+      "id": "cisco-skill-scanner",
+      "category": "vertical",
+      "name": "Cisco Skill Scanner",
+      "owner": "cisco-ai-defense",
+      "repo": "cisco-ai-defense/skill-scanner",
+      "stars": 2569,
+      "emoji": "🛡️",
+      "shortDesc": "Cisco AI Defense——Agent Skill 风险模式检测",
+      "descEn": "Cisco AI Defense — detect risk patterns in agent skills",
+      "features": [
+        "签名检测",
+        "LLM 语义分析",
+        "行为数据流",
+        "可配置规则包"
+      ],
+      "install": "pip install cisco-ai-defense",
+      "usage": "pip 安装后调用扫描 API",
+      "compatible": [
+        "Python",
+        "Cisco"
+      ],
+      "repoUrl": "https://github.com/cisco-ai-defense/skill-scanner"
+    },
+    {
+      "id": "slowmist-agent-sec",
+      "category": "vertical",
+      "name": "慢雾 Agent 安全",
+      "owner": "slowmist",
+      "repo": "slowmist/slowmist-agent-security",
+      "stars": 509,
+      "emoji": "🌫️",
+      "shortDesc": "慢雾科技 AI Agent 安全审查框架——代码+URL+链上地址",
+      "descEn": "SlowMist AI Agent security review framework — code, URL, on-chain",
+      "features": [
+        "GitHub Repo 审计",
+        "URL/文档分析",
+        "链上地址审查",
+        "对抗环境"
+      ],
+      "install": "git clone https://github.com/slowmist/slowmist-agent-security",
+      "usage": "克隆后运行审查脚本",
+      "compatible": [
+        "Python",
+        "慢雾科技"
+      ],
+      "repoUrl": "https://github.com/slowmist/slowmist-agent-security"
+    },
+    {
+      "id": "seclab-taskflow",
+      "category": "vertical",
+      "name": "SecLab Taskflow Agent",
+      "owner": "GitHubSecurityLab",
+      "repo": "GitHubSecurityLab/seclab-taskflow-agent",
+      "stars": 259,
+      "emoji": "🕵️",
+      "shortDesc": "GitHub 安全实验室 AI 安全自动化框架——24 Android 漏洞发现",
+      "descEn": "GitHub Security Lab AI security automation framework",
+      "features": [
+        "安全研究员 workflow",
+        "Taskflow YAML",
+        "MCP 工具",
+        "漏洞自动发现"
+      ],
+      "install": "gh codespace create -r GitHubSecurityLab/seclab-taskflow-agent",
+      "usage": "在 Codespace 里运行 ./scripts/audit/run_mobile.sh",
+      "compatible": [
+        "GitHub Codespaces",
+        "Copilot"
+      ],
+      "repoUrl": "https://github.com/GitHubSecurityLab/seclab-taskflow-agent"
+    },
+    {
+      "id": "adversa-redteam",
+      "category": "vertical",
+      "name": "Adversa AI Red Team Agent",
+      "owner": "adversa-ai",
+      "repo": "adversa-ai/adversa-red-team-agent",
+      "stars": 0,
+      "emoji": "💀",
+      "shortDesc": "专门攻破 AI Agent 的自动化红队——GitHub ProdBot CTF 全通关",
+      "descEn": "AI agent red team agent — cleared all GitHub ProdBot CTF levels",
+      "features": [
+        "自动越狱",
+        "多轮对抗",
+        "Agent 权限提升",
+        "MCP Tool 污染"
+      ],
+      "install": "pip install adversa-redteam",
+      "usage": "pip 安装后 point at target",
+      "compatible": [
+        "Python",
+        "研究级"
+      ],
+      "repoUrl": "https://github.com/adversa-ai/adversa-red-team-agent"
     }
   ]
 }
