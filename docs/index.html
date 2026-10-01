@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🚀 Awesome AI Skills - GitHub 热门 AI Agent 技能合集</title>
+  <meta name="description" content="精选 GitHub 热门 AI Agent Skills 和工具集合，30+ 项目，8 大分类，附安装命令和详细说明书">
+  <meta name="keywords" content="ai-agent, agent-skills, awesome-list, llm, claude-code, github-copilot">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950 min-h-screen text-slate-100">
+
+  <!-- 顶部导航 -->
+  <header class="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/70 border-b border-slate-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3 group">
+        <span class="text-3xl group-hover:scale-110 transition">🚀</span>
+        <div>
+          <h1 class="text-xl font-bold bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Awesome AI Skills</h1>
+          <p class="text-xs text-slate-400">GitHub 热门 AI Agent 技能合集</p>
+        </div>
+      </a>
+      <a href="https://github.com/jiang-lin17/awesome-ai-skills" target="_blank" class="hidden sm:flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800/60 hover:bg-slate-700/60 border border-slate-700/50 transition text-sm">
+        <i class="fa-brands fa-github"></i>
+        <span>GitHub</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero 区域 -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-12 pb-8 text-center">
+    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-indigo-500/10 border border-indigo-400/30 text-indigo-300 text-xs mb-6">
+      <span class="relative flex h-2 w-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-indigo-400"></span>
+      </span>
+      自动更新中 · 29 个项目 · 8 大分类
+    </div>
+    <h2 class="text-4xl sm:text-5xl font-black mb-4 leading-tight">
+      给你的 AI Agent
+      <span class="bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">装上技能</span>
+    </h2>
+    <p class="text-slate-400 max-w-2xl mx-auto text-base sm:text-lg">
+      精选 GitHub 上最热门的 AI Agent Skills 和工具，一键安装命令，详细说明书，让你的 AI 助手立刻变强
+    </p>
+  </section>
+
+  <!-- 搜索栏 -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-6">
+    <div class="relative max-w-2xl mx-auto">
+      <i class="fa-solid fa-magnifying-glass absolute left-5 top-1/2 -translate-y-1/2 text-slate-500 text-lg"></i>
+      <input id="searchInput" type="text" placeholder="搜索 Skill 名称、描述、功能关键词..." 
+        class="w-full pl-14 pr-5 py-4 rounded-2xl bg-slate-800/60 border border-slate-700/50 focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 outline-none transition text-slate-100 placeholder-slate-500 text-base">
+    </div>
+  </section>
+
+  <!-- 分类标签 -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+    <div id="categoryFilters" class="flex flex-wrap gap-2 justify-center"></div>
+  </section>
+
+  <!-- Skill 卡片列表 -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
+    <div id="skillGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"></div>
+    <div id="emptyState" class="hidden text-center py-20">
+      <div class="text-6xl mb-4">🔍</div>
+      <p class="text-slate-400 text-lg">没有找到匹配的 Skill，试试其他关键词吧</p>
+    </div>
+  </main>
+
+  <!-- 底部 -->
+  <footer class="border-t border-slate-800/50 py-8 text-center">
+    <p class="text-slate-500 text-sm">
+      Made with <span class="text-red-400">❤</span> by 
+      <a href="https://github.com/jiang-lin17" class="text-indigo-400 hover:text-indigo-300" target="_blank">jiang-lin17</a>
+       · Data auto-updated from GitHub API
+    </p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

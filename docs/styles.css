@@ -1,0 +1,188 @@
+/* ===== 全局基础样式 ===== */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', Roboto, sans-serif;
+}
+
+/* ===== Skill 卡片 ===== */
+.skill-card {
+  background: linear-gradient(135deg, rgba(30,41,59,0.6) 0%, rgba(15,23,42,0.8) 100%);
+  border: 1px solid rgba(71,85,105,0.3);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.skill-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at top right, rgba(99,102,241,0.15), transparent 60%);
+  opacity: 0;
+  transition: opacity 0.3s;
+  pointer-events: none;
+}
+
+.skill-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(99,102,241,0.4);
+  box-shadow: 0 20px 40px -15px rgba(99,102,241,0.2);
+}
+
+.skill-card:hover::before {
+  opacity: 1;
+}
+
+/* ===== 分类按钮 ===== */
+.cat-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  background: rgba(30,41,59,0.6);
+  border: 1px solid rgba(71,85,105,0.4);
+  color: rgb(148,163,184);
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.cat-btn:hover {
+  background: rgba(51,65,85,0.6);
+  color: rgb(226,232,240);
+  border-color: rgba(99,102,241,0.3);
+}
+
+.cat-btn.active {
+  background: linear-gradient(135deg, rgba(99,102,241,0.3), rgba(139,92,246,0.3));
+  border-color: rgba(129,140,248,0.5);
+  color: rgb(226,232,240);
+}
+
+/* ===== 徽章 ===== */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.badge-star {
+  background: rgba(251,191,36,0.15);
+  color: rgb(252,211,77);
+}
+
+/* ===== 代码块 ===== */
+.code-block {
+  background: rgba(15,23,42,0.8);
+  border: 1px solid rgba(71,85,105,0.4);
+  border-radius: 0.75rem;
+  padding: 1rem 1.25rem;
+  font-family: 'JetBrains Mono', 'Fira Code', Consolas, monospace;
+  font-size: 0.875rem;
+  color: rgb(165,243,252);
+  overflow-x: auto;
+  position: relative;
+  white-space: pre;
+}
+
+.code-block .copy-btn {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  background: rgba(71,85,105,0.5);
+  color: rgb(148,163,184);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+  border: none;
+}
+
+.code-block .copy-btn:hover {
+  background: rgba(99,102,241,0.4);
+  color: white;
+}
+
+/* ===== 标签 ===== */
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  background: rgba(99,102,241,0.15);
+  color: rgb(165,180,252);
+  border: 1px solid rgba(99,102,241,0.25);
+}
+
+/* ===== 详情页分区 ===== */
+.detail-section {
+  background: linear-gradient(135deg, rgba(30,41,59,0.5) 0%, rgba(15,23,42,0.7) 100%);
+  border: 1px solid rgba(71,85,105,0.3);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.detail-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: rgb(226,232,240);
+}
+
+/* ===== 渐变色标题 ===== */
+.gradient-text {
+  background: linear-gradient(135deg, #a5b4fc, #c4b5fd, #f0abfc);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ===== 卡片内链接 ===== */
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* ===== 响应式调整 ===== */
+@media (max-width: 640px) {
+  .skill-card {
+    padding: 1.25rem;
+  }
+}
+
+/* ===== 滚动条美化 ===== */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15,23,42,0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(71,85,105,0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(99,102,241,0.5);
+}
