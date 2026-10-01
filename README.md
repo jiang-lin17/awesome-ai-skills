@@ -4,6 +4,23 @@
 
 <div align="center">
 
+<!-- 🎯 网站入口横幅 -->
+<table>
+<tr>
+<td align="center" width="100%" style="padding:20px;border-radius:12px;background:linear-gradient(135deg,#6366f1,#8b5cf6,#ec4899);color:#fff;">
+
+### 👀 想看？点击进入网站浏览！
+
+**👉 [https://jiang-lin17.github.io/awesome-ai-skills/](https://jiang-lin17.github.io/awesome-ai-skills/)**
+
+搜索 · 分类筛选 · 点击看说明书 · 一键复制安装命令
+
+</td>
+</tr>
+</table>
+
+<br>
+
 [![GitHub stars](https://img.shields.io/github/stars/jiang-lin17/awesome-ai-skills?style=social)](https://github.com/jiang-lin17/awesome-ai-skills/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/jiang-lin17/awesome-ai-skills?style=social)](https://github.com/jiang-lin17/awesome-ai-skills/network/members)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
