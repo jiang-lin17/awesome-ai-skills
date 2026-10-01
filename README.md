@@ -4,13 +4,14 @@
 
 <div align="center">
 
-![Stars](https://img.shields.io/badge/⭐_Projects-30+-brightgreen)
-![Topics](https://img.shields.io/badge/🏷️_Topics-8-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+[![GitHub stars](https://img.shields.io/github/stars/jiang-lin17/awesome-ai-skills?style=social)](https://github.com/jiang-lin17/awesome-ai-skills/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/jiang-lin17/awesome-ai-skills?style=social)](https://github.com/jiang-lin17/awesome-ai-skills/network/members)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](./LICENSE)
+[![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/jiang-lin17/awesome-ai-skills/graphs/commit-activity)
+[![Auto-update](https://img.shields.io/badge/Auto--Update-Enabled-brightgreen.svg)](https://github.com/jiang-lin17/awesome-ai-skills/actions)
 
 **🤖 AI Agent Skills · 🛠️ 工具框架 · 💡 安装即用**
-
-[English](#) | [中文](#)
+**30+ Curated Projects · 8 Categories · Auto-updated Stars**
 
 </div>
 
