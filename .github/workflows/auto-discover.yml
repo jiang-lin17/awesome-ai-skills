@@ -1,0 +1,59 @@
+name: Auto-discover New AI Skills
+
+# 每周一凌晨 02:30 UTC（北京时间 10:30）自动跑
+on:
+  schedule:
+    - cron: "30 2 * * 1"
+  workflow_dispatch:  # 也可以在 Actions 页面手动点 Run workflow
+
+permissions:
+  contents: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛎️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: 🔍 Auto-discover new skills
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python scripts/auto_discover.py
+
+      - name: 📦 Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          
+          # 只在有变化时才 commit
+          if git diff --quiet docs/data/skills.json; then
+            echo "No new skills found. Nothing to commit."
+            exit 0
+          fi
+          
+          git add docs/data/skills.json
+          git add discovery-logs/ || true
+          git commit -m "🤖 Auto-discovered new AI skills ($(date +%Y-%m-%d))"
+
+          # 用 PAT 推（如果配置了），否则用默认 token
+          if [ -n "${{ secrets.GITHUB_PAT }}" ]; then
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_PAT }}@github.com/${{ github.repository }}.git
+          fi
+          
+          git push origin main
+
+      - name: 📊 Summary
+        if: always()
+        run: |
+          echo "## 🤖 Auto-discover Run Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Repo:** ${{ github.repository }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Time:** $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check the diff above for newly discovered skills!" >> $GITHUB_STEP_SUMMARY
