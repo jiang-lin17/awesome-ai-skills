@@ -3,42 +3,42 @@
     {
       "id": "skills",
       "name": "🧠 Agent Skills 技能库",
-      "desc": "可直接加载的纯 Skill 包"
+      "desc": "🧠 纯技能包：装上就让 AI 多一种本事"
     },
     {
       "id": "framework",
       "name": "🔧 Agent 框架",
-      "desc": "搭建 AI Agent 应用的平台"
+      "desc": "🔧 搭 Agent 用的平台：从零开始做 AI 助手"
     },
     {
       "id": "memory",
       "name": "💾 持久化记忆",
-      "desc": "让 Agent 跨会话记住东西"
+      "desc": "💾 记忆增强：让 AI 跨会话记住东西不失忆"
     },
     {
       "id": "web",
       "name": "🌐 网络访问",
-      "desc": "让 Agent 能上网搜数据"
+      "desc": "🌐 联网能力：让 AI 能上网搜数据、操作网站"
     },
     {
       "id": "code",
       "name": "🎨 代码开发",
-      "desc": "让 Coding Agent 更专业"
+      "desc": "🎨 编程辅助：让写代码的 AI 更专业、更聪明"
     },
     {
       "id": "prompts",
       "name": "🔍 System Prompts",
-      "desc": "顶级 AI 工具内幕"
+      "desc": "🔍 System Prompts：扒 AI 工具背后的内幕"
     },
     {
       "id": "learn",
       "name": "📚 学习资源",
-      "desc": "Awesome Lists & 教程"
+      "desc": "📚 学习资源：想系统学 AI Agent 可以看这些"
     },
     {
       "id": "vertical",
       "name": "⚙️ 垂直领域",
-      "desc": "特定场景工具"
+      "desc": "⚙️ 垂直场景：特定任务用的（PPT/营销/安全等）"
     }
   ],
   "skills": [
@@ -50,7 +50,7 @@
       "repo": "openclaw/openclaw",
       "stars": 391075,
       "emoji": "🦞",
-      "shortDesc": "现象级开源个人 AI Agent 框架，本地运行+多平台消息接入",
+      "shortDesc": "现象级开源 AI 助手，本地跑 + 接 WhatsApp/Telegram 全天候干活",
       "descEn": "Phenomenal open-source personal AI agent framework, local-first, multi-channel",
       "features": [
         "本地部署",
@@ -64,7 +64,8 @@
         "跨平台",
         "Node.js"
       ],
-      "repoUrl": "https://github.com/openclaw/openclaw"
+      "repoUrl": "https://github.com/openclaw/openclaw",
+      "useCase": "想有个 7x24 小时帮你查邮件、管日程、刷网页的私人助理"
     },
     {
       "id": "superpowers",
@@ -74,7 +75,7 @@
       "repo": "obra/superpowers",
       "stars": 293556,
       "emoji": "🧩",
-      "shortDesc": "Agentic skills 框架，教 Agent 先规划再执行，减少混乱代码",
+      "shortDesc": "让 AI 先写计划等你确认再动手，不瞎写代码",
       "descEn": "An agentic skills framework that teaches agents to plan before coding — massive productivity gains.",
       "features": [
         "先规划后编码方法论",
@@ -90,7 +91,8 @@
         "Cursor",
         "OpenClaw"
       ],
-      "repoUrl": "https://github.com/obra/superpowers"
+      "repoUrl": "https://github.com/obra/superpowers",
+      "useCase": "AI 写代码写一半方向错了？强制它先给大纲再干活"
     },
     {
       "id": "mattpocock-skills",
@@ -100,7 +102,7 @@
       "repo": "mattpocock/skills",
       "stars": 273284,
       "emoji": "🎣",
-      "shortDesc": "Vercel Matt Pocock 出品，idea 审查+Code Review 全套 Skill",
+      "shortDesc": "Vercel 大神做的想法审查器，像面试官一样怼你的创意",
       "descEn": "Matt Pocock skill pack: grill-me idea testing, code review, TS deep dives",
       "features": [
         "grill-me 创意审查",
@@ -115,7 +117,8 @@
         "Copilot",
         "Cursor"
       ],
-      "repoUrl": "https://github.com/mattpocock/skills"
+      "repoUrl": "https://github.com/mattpocock/skills",
+      "useCase": "想做新项目、写论文开题、怕想法太天真，让它帮你泼冷水"
     },
     {
       "id": "hermes-agent",
@@ -125,7 +128,7 @@
       "repo": "NousResearch/hermes-agent",
       "stars": 250409,
       "emoji": "🧠",
-      "shortDesc": "会\"成长\"的 Agent！持久化运行，自动学习你的习惯",
+      "shortDesc": "AI 助手会学习，每次干活都积累经验，越用越聪明",
       "descEn": "The agent that grows with you — persistent, self-learning, multi-model, built-in skills & memory.",
       "features": [
         "持久化后台运行",
@@ -139,7 +142,8 @@
         "跨平台",
         "支持任何 LLM"
       ],
-      "repoUrl": "https://github.com/NousResearch/hermes-agent"
+      "repoUrl": "https://github.com/NousResearch/hermes-agent",
+      "useCase": "想让 AI 记住你之前让它做过啥、下次自动优化"
     },
     {
       "id": "n8n",
@@ -149,7 +153,7 @@
       "repo": "n8n-io/n8n",
       "stars": 206403,
       "emoji": "🔄",
-      "shortDesc": "开源工作流自动化 + AI 能力，400+ 集成",
+      "shortDesc": "280+ 自动化模板，Gmail/Slack/Notion/Telegram 一键搭工作流",
       "descEn": "Open-source workflow automation with native AI — 400+ integrations, visual builder.",
       "features": [
         "400+ 服务集成",
@@ -164,7 +168,8 @@
         "云服务",
         "Node.js"
       ],
-      "repoUrl": "https://github.com/n8n-io/n8n"
+      "repoUrl": "https://github.com/n8n-io/n8n",
+      "useCase": "想自动发邮件、自动同步数据、不想写代码搭自动化"
     },
     {
       "id": "AutoGPT",
@@ -174,7 +179,7 @@
       "repo": "Significant-Gravitas/AutoGPT",
       "stars": 187630,
       "emoji": "🎯",
-      "shortDesc": "自主 Agent 先驱！给 AI 一个目标，它自己规划执行",
+      "shortDesc": "大名鼎鼎的自主 AI，给个目标它自己拆步骤去实现",
       "descEn": "The OG autonomous AI agent — give it a goal, it plans & executes without step-by-step guidance.",
       "features": [
         "自主规划+执行",
@@ -188,7 +193,8 @@
         "跨平台",
         "Docker"
       ],
-      "repoUrl": "https://github.com/Significant-Gravitas/AutoGPT"
+      "repoUrl": "https://github.com/Significant-Gravitas/AutoGPT",
+      "useCase": "你说帮我做个网站，它自己查资料、写代码、搭起来"
     },
     {
       "id": "firecrawl",
@@ -198,7 +204,7 @@
       "repo": "firecrawl/firecrawl",
       "stars": 187269,
       "emoji": "🔥",
-      "shortDesc": "给 Agent 喂网页数据的 API，搜索+抓取+清洗一条龙",
+      "shortDesc": "给 AI 一个万能上网钥匙，搜全网、爬网页、抓数据",
       "descEn": "Turns any website into LLM-ready data — search, scrape, extract in one API.",
       "features": [
         "网页 → LLM 可用数据",
@@ -213,7 +219,8 @@
         "Node.js",
         "API 通用"
       ],
-      "repoUrl": "https://github.com/firecrawl/firecrawl"
+      "repoUrl": "https://github.com/firecrawl/firecrawl",
+      "useCase": "AI 只能回答训练过的东西？装上它就能实时搜全网"
     },
     {
       "id": "anthropics-skills",
@@ -240,7 +247,8 @@
         "Trae",
         "OpenClaw"
       ],
-      "repoUrl": "https://github.com/anthropics/skills"
+      "repoUrl": "https://github.com/anthropics/skills",
+      "useCase": "想让 AI 在「Anthropic 官方开源 」方面变强的时候用"
     },
     {
       "id": "dify",
@@ -250,7 +258,7 @@
       "repo": "langgenius/dify",
       "stars": 157632,
       "emoji": "🎨",
-      "shortDesc": "开源 Agent 工作流平台，拖拽式构建",
+      "shortDesc": "搭 AI 应用的乐高，拖拖拽拽做聊天机器人和 Agent 流程",
       "descEn": "Open-source platform for building agentic workflows — visual builder, cloud/self-hosted.",
       "features": [
         "拖拽式可视化构建",
@@ -265,7 +273,8 @@
         "Kubernetes",
         "云服务"
       ],
-      "repoUrl": "https://github.com/langgenius/dify"
+      "repoUrl": "https://github.com/langgenius/dify",
+      "useCase": "不会写代码也想搭个 AI 聊天机器人，用 Dify 拖就行"
     },
     {
       "id": "agency-agents",
@@ -275,7 +284,7 @@
       "repo": "msitarzewski/agency-agents",
       "stars": 155552,
       "emoji": "🏢",
-      "shortDesc": "一整个 AI\"代理公司\"——每个 Agent 是某个领域专家",
+      "shortDesc": "一个 AI 公司，前端、文案、运营、代码全是不同角色",
       "descEn": "A complete AI agency at your fingertips — each agent a domain expert with personality & deliverables.",
       "features": [
         "多 Agent 协作",
@@ -288,7 +297,8 @@
       "compatible": [
         "Mac/Linux/WSL"
       ],
-      "repoUrl": "https://github.com/msitarzewski/agency-agents"
+      "repoUrl": "https://github.com/msitarzewski/agency-agents",
+      "useCase": "一个人干不过来？让 5 个 AI 角色分工帮你干"
     },
     {
       "id": "langflow",
@@ -298,7 +308,7 @@
       "repo": "langflow-ai/langflow",
       "stars": 155416,
       "emoji": "🧊",
-      "shortDesc": "LangChain 官方可视化构建器",
+      "shortDesc": "LangChain 的可视化版本，画流程图拼 AI Agent",
       "descEn": "Visual builder for LangChain — drag-and-drop RAG, agents, and LLM pipelines.",
       "features": [
         "LangChain 官方出品",
@@ -312,7 +322,8 @@
         "本地 Python",
         "Docker"
       ],
-      "repoUrl": "https://github.com/langflow-ai/langflow"
+      "repoUrl": "https://github.com/langflow-ai/langflow",
+      "useCase": "喜欢可视化编程、想拖拽搭建 AI Agent 工作流"
     },
     {
       "id": "ponytail",
@@ -322,7 +333,7 @@
       "repo": "DietrichGebert/ponytail",
       "stars": 149467,
       "emoji": "🐴",
-      "shortDesc": "让 Agent 像\"最懒的资深工程师\"一样思考",
+      "shortDesc": "让 AI 像最懒老油条程序员，能不写就不写",
       "descEn": "Makes AI agents think like the laziest senior dev — the best code is code you never wrote.",
       "features": [
         "反过度工程",
@@ -337,7 +348,8 @@
         "Copilot",
         "Cursor"
       ],
-      "repoUrl": "https://github.com/DietrichGebert/ponytail"
+      "repoUrl": "https://github.com/DietrichGebert/ponytail",
+      "useCase": "嫌 AI 写代码写太多、想用最少的代码解决问题"
     },
     {
       "id": "langchain",
@@ -361,7 +373,8 @@
         "Python",
         "JavaScript/TypeScript"
       ],
-      "repoUrl": "https://github.com/langchain-ai/langchain"
+      "repoUrl": "https://github.com/langchain-ai/langchain",
+      "useCase": "想让 AI 在「Agent 工程标准框架，最大」方面变强的时候用"
     },
     {
       "id": "system-prompts",
@@ -371,7 +384,7 @@
       "repo": "x1xhlol/system-prompts-and-models-of-ai-tools",
       "stars": 143992,
       "emoji": "🔐",
-      "shortDesc": "Cursor/Claude Code/Devin/Trae 等 30+ AI 工具的 System Prompt 全集",
+      "shortDesc": "扒了 Cursor/Claude Code/Copilot/Kiro 的内部提示词",
       "descEn": "Full system prompts & internal tools of 30+ top AI coding tools — Cursor, Claude Code, Devin, Trae, Windsurf, etc.",
       "features": [
         "30+ 顶级 AI 工具",
@@ -385,7 +398,8 @@
         "纯学习资源",
         "无运行时依赖"
       ],
-      "repoUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools"
+      "repoUrl": "https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools",
+      "useCase": "想知道各款 AI 工具背后怎么调教 AI 的，来围观"
     },
     {
       "id": "awesome-llm-apps",
@@ -395,7 +409,7 @@
       "repo": "Shubhamsaboo/awesome-llm-apps",
       "stars": 140428,
       "emoji": "📚",
-      "shortDesc": "100+ 免费开源 AI Agent、Skill 和 RAG 应用",
+      "shortDesc": "100+ AI Agent 和 RAG 应用合集，Python + 开源",
       "descEn": "100+ free & open-source AI agents, agent skills & RAG apps — great starting point.",
       "features": [
         "100+ 精选项目",
@@ -409,7 +423,8 @@
         "纯资源",
         "无运行时依赖"
       ],
-      "repoUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps"
+      "repoUrl": "https://github.com/Shubhamsaboo/awesome-llm-apps",
+      "useCase": "想找现成的 AI 项目抄、学习别人怎么搭的"
     },
     {
       "id": "browser-use",
@@ -419,7 +434,7 @@
       "repo": "browser-use/browser-use",
       "stars": 116869,
       "emoji": "🌐",
-      "shortDesc": "让 LLM 控制浏览器！自动化网页操作",
+      "shortDesc": "让 AI 真的像人一样操作浏览器，点按钮、填表单、截图",
       "descEn": "Make AI agents control browsers autonomously — sign up, fill forms, scrape, click through sites.",
       "features": [
         "LLM 控制浏览器",
@@ -433,7 +448,8 @@
         "Python",
         "所有支持 function-calling 的 LLM"
       ],
-      "repoUrl": "https://github.com/browser-use/browser-use"
+      "repoUrl": "https://github.com/browser-use/browser-use",
+      "useCase": "让 AI 帮你自动填表单、刷网页、截图留证"
     },
     {
       "id": "pi-fw",
@@ -443,7 +459,7 @@
       "repo": "earendil-works/pi",
       "stars": 110866,
       "emoji": "🍰",
-      "shortDesc": "轻量 AI Agent 工具箱：统一 LLM API + Agent Loop + TUI",
+      "shortDesc": "轻量 AI Agent 工具箱，统一 API + 漂亮终端界面",
       "descEn": "Lightweight toolkit: unified LLM API, agent loop, TUI, coding CLI",
       "features": [
         "统一 LLM API",
@@ -457,7 +473,8 @@
         "Linux",
         "WSL"
       ],
-      "repoUrl": "https://github.com/earendil-works/pi"
+      "repoUrl": "https://github.com/earendil-works/pi",
+      "useCase": "想要一个好用的终端 AI 助手、不想折腾太多依赖"
     },
     {
       "id": "pi",
@@ -467,7 +484,7 @@
       "repo": "earendil-works/pi",
       "stars": 110835,
       "emoji": "🍰",
-      "shortDesc": "轻量 AI Agent 工具箱：统一 API + agent loop + TUI",
+      "shortDesc": "轻量 AI Agent 工具箱，统一 LLM API + Agent Loop + TUI",
       "descEn": "Lightweight AI agent toolkit — unified LLM API, agent loop, TUI, and coding CLI.",
       "features": [
         "统一 LLM API",
@@ -481,7 +498,8 @@
         "Mac/Linux",
         "WSL"
       ],
-      "repoUrl": "https://github.com/earendil-works/pi"
+      "repoUrl": "https://github.com/earendil-works/pi",
+      "useCase": "想有个好用的终端 AI、不想折腾太多依赖"
     },
     {
       "id": "caveman",
@@ -491,7 +509,7 @@
       "repo": "JuliusBrussee/caveman",
       "stars": 108625,
       "emoji": "🪨",
-      "shortDesc": "\"洞穴人\"极简 token Skill，砍掉 65% token",
+      "shortDesc": "让 AI 用最少的字说清楚事，省 65% API 钱",
       "descEn": "Viral skill that cuts 65% of tokens by teaching AI to speak like a caveman — proven huge savings.",
       "features": [
         "65% token 节省",
@@ -506,7 +524,8 @@
         "OpenClaw",
         "Hermes"
       ],
-      "repoUrl": "https://github.com/JuliusBrussee/caveman"
+      "repoUrl": "https://github.com/JuliusBrussee/caveman",
+      "useCase": "嫌 AI 太啰嗦、想快速看重点、API 又贵的时候用"
     },
     {
       "id": "gemini-cli",
@@ -516,7 +535,7 @@
       "repo": "google-gemini/gemini-cli",
       "stars": 107212,
       "emoji": "💎",
-      "shortDesc": "Google 开源 Gemini CLI Agent，多模态终端助手",
+      "shortDesc": "Google 出品的终端 AI 助手，在命令行里用 Gemini",
       "descEn": "Open-source multimodal Gemini agent in your terminal — Google's official AI CLI.",
       "features": [
         "Google 官方",
@@ -530,7 +549,8 @@
         "跨平台",
         "Node.js 环境"
       ],
-      "repoUrl": "https://github.com/google-gemini/gemini-cli"
+      "repoUrl": "https://github.com/google-gemini/gemini-cli",
+      "useCase": "喜欢在终端里干活、想用 Gemini 模型写代码"
     },
     {
       "id": "agent-skills",
@@ -540,7 +560,7 @@
       "repo": "addyosmani/agent-skills",
       "stars": 100202,
       "emoji": "🔧",
-      "shortDesc": "Google Addy Osmani 出品，生产级工程技能包",
+      "shortDesc": "Google Addy Osmani 出品，AI 写代码的 20 个专业套路",
       "descEn": "Production-grade engineering skills for AI coding agents by Google's Addy Osmani.",
       "features": [
         "Google 出品",
@@ -555,7 +575,8 @@
         "Copilot",
         "Cursor"
       ],
-      "repoUrl": "https://github.com/addyosmani/agent-skills"
+      "repoUrl": "https://github.com/addyosmani/agent-skills",
+      "useCase": "想让 AI 写出更专业、更规范的代码时用"
     },
     {
       "id": "autoresearch",
@@ -565,7 +586,7 @@
       "repo": "karpathy/autoresearch",
       "stars": 97083,
       "emoji": "🧪",
-      "shortDesc": "Karpathy 出品，自动运行 AI 研究实验",
+      "shortDesc": "AI 自动做科研，给个方向自动跑实验看结果",
       "descEn": "AI agents running research experiments autonomously — Karpathy's research automation framework.",
       "features": [
         "Karpathy 出品",
@@ -579,7 +600,8 @@
         "Python",
         "需要 GPU（可选）"
       ],
-      "repoUrl": "https://github.com/karpathy/autoresearch"
+      "repoUrl": "https://github.com/karpathy/autoresearch",
+      "useCase": "想让 AI 帮你跑科研实验、看 AI 论文自动汇总"
     },
     {
       "id": "playwright-skill",
@@ -589,7 +611,7 @@
       "repo": "microsoft/playwright",
       "stars": 96939,
       "emoji": "🎭",
-      "shortDesc": "Playwright 自动化浏览器——Anthropic 推荐 Agent Skill",
+      "shortDesc": "让 AI 自动打开浏览器，测试你的网站看 UI 对不对",
       "descEn": "Playwright browser automation — Anthropic-recommended agent skill",
       "features": [
         "多浏览器",
@@ -604,7 +626,8 @@
         "Copilot",
         "Node.js"
       ],
-      "repoUrl": "https://github.com/microsoft/playwright"
+      "repoUrl": "https://github.com/microsoft/playwright",
+      "useCase": "写完网站想自动测一下、让 AI 帮你截图看效果"
     },
     {
       "id": "claude-mem",
@@ -614,7 +637,7 @@
       "repo": "thedotmack/claude-mem",
       "stars": 95042,
       "emoji": "🧠",
-      "shortDesc": "给 Claude Code 加持久记忆！跨会话记住一切",
+      "shortDesc": "让 AI 跨会话记住你，上次聊的事下次接着来",
       "descEn": "Persistent memory for Claude Code — captures sessions, compresses with AI, injects context automatically.",
       "features": [
         "自动捕捉编码会话",
@@ -632,7 +655,8 @@
         "Hermes",
         "Copilot"
       ],
-      "repoUrl": "https://github.com/thedotmack/claude-mem"
+      "repoUrl": "https://github.com/thedotmack/claude-mem",
+      "useCase": "AI 每次都失忆重新聊？装上它帮 AI 记住你的历史对话"
     },
     {
       "id": "ragflow",
@@ -642,7 +666,7 @@
       "repo": "infiniflow/ragflow",
       "stars": 91566,
       "emoji": "📑",
-      "shortDesc": "开源 RAG 引擎，深度文档理解 + Agent 融合",
+      "shortDesc": "开源 RAG 引擎，把你的文档喂给 AI，让它基于你的知识回答",
       "descEn": "Open-source RAG engine with deep document understanding + agent capability fusion.",
       "features": [
         "深度文档理解",
@@ -656,7 +680,8 @@
         "Docker",
         "Kubernetes"
       ],
-      "repoUrl": "https://github.com/infiniflow/ragflow"
+      "repoUrl": "https://github.com/infiniflow/ragflow",
+      "useCase": "想搭一个只懂你公司知识的 AI 助手"
     },
     {
       "id": "agent-reach",
@@ -680,7 +705,8 @@
         "所有 AI Agent 框架",
         "Python 项目"
       ],
-      "repoUrl": "https://github.com/Panniantong/Agent-Reach"
+      "repoUrl": "https://github.com/Panniantong/Agent-Reach",
+      "useCase": "想让 AI 在「给 Agent 装上全网\"眼睛」方面变强的时候用"
     },
     {
       "id": "crawl4ai",
@@ -690,7 +716,7 @@
       "repo": "unclecode/crawl4ai",
       "stars": 84587,
       "emoji": "🕷️",
-      "shortDesc": "AI 友好爬虫，一键网页变 LLM 可用 Markdown",
+      "shortDesc": "专为 AI Agent 设计的爬虫，抓完直接给 AI 用",
       "descEn": "Open-source AI-friendly web crawler — converts any URL into LLM-ready Markdown in seconds.",
       "features": [
         "网页 → Markdown",
@@ -704,7 +730,8 @@
         "Python",
         "所有 Agent 框架"
       ],
-      "repoUrl": "https://github.com/unclecode/crawl4ai"
+      "repoUrl": "https://github.com/unclecode/crawl4ai",
+      "useCase": "给 AI 喂网页数据、做 RAG、建知识库"
     },
     {
       "id": "orca",
@@ -714,7 +741,7 @@
       "repo": "stablyai/orca",
       "stars": 82651,
       "emoji": "🐳",
-      "shortDesc": "让多个 AI Agent 并行开发的 IDE 编排工具",
+      "shortDesc": "让多个 AI Agent 同时写代码，比谁写得好就用谁",
       "descEn": "Cross-platform multi-agent orchestration IDE — parallel agents, merge best",
       "features": [
         "多 Agent 并行",
@@ -727,7 +754,8 @@
         "跨平台",
         "Node.js"
       ],
-      "repoUrl": "https://github.com/stablyai/orca"
+      "repoUrl": "https://github.com/stablyai/orca",
+      "useCase": "一个 AI 可能搞错，让 3 个 AI 并行干，选最好的结果"
     },
     {
       "id": "rtk",
@@ -737,7 +765,7 @@
       "repo": "rtk-ai/rtk",
       "stars": 82133,
       "emoji": "⚡",
-      "shortDesc": "CLI 代理，砍掉 60-90% LLM token 消耗",
+      "shortDesc": "让 AI 自动写测试、跑测试、看结果",
       "descEn": "CLI proxy that cuts LLM token consumption by 60-90% — smart compression without losing quality.",
       "features": [
         "60-90% token 节省",
@@ -752,7 +780,8 @@
         "Rust 编译",
         "CLI 工具链"
       ],
-      "repoUrl": "https://github.com/rtk-ai/rtk"
+      "repoUrl": "https://github.com/rtk-ai/rtk",
+      "useCase": "写完代码懒得写测试、让 AI 帮你测"
     },
     {
       "id": "hello-agents",
@@ -775,7 +804,8 @@
       "compatible": [
         "所有想学 AI Agent 的开发者"
       ],
-      "repoUrl": "https://github.com/datawhalechina/Hello-Agents"
+      "repoUrl": "https://github.com/datawhalechina/Hello-Agents",
+      "useCase": "想让 AI 在「Datawhale 出品，从零」方面变强的时候用"
     },
     {
       "id": "career-ops",
@@ -785,7 +815,7 @@
       "repo": "career-ops-hq/career-ops",
       "stars": 73173,
       "emoji": "💼",
-      "shortDesc": "开源 AI 求职 Agent——自动扫描招聘站",
+      "shortDesc": "AI 职业教练，简历改写、面试模拟、职业规划",
       "descEn": "Open-source AI job search agent — scans portals, evaluates listings, generates resumes.",
       "features": [
         "自动扫描招聘站",
@@ -799,7 +829,8 @@
         "Python",
         "API 通用"
       ],
-      "repoUrl": "https://github.com/career-ops-hq/career-ops"
+      "repoUrl": "https://github.com/career-ops-hq/career-ops",
+      "useCase": "写简历、准备面试、想换方向"
     },
     {
       "id": "mem0",
@@ -809,7 +840,7 @@
       "repo": "mem0ai/mem0",
       "stars": 66401,
       "emoji": "🧠",
-      "shortDesc": "给任何 LLM 添加持久化记忆的通用层",
+      "shortDesc": "给任何 LLM 加持久化记忆的通用层",
       "descEn": "Universal memory layer for LLMs — persistent memory for any LLM app",
       "features": [
         "多 LLM 支持",
@@ -824,7 +855,8 @@
         "LangChain",
         "LlamaIndex"
       ],
-      "repoUrl": "https://github.com/mem0ai/mem0"
+      "repoUrl": "https://github.com/mem0ai/mem0",
+      "useCase": "自己在搭 AI 应用、想给你的 LLM 加记忆功能"
     },
     {
       "id": "last30days-skill",
@@ -834,7 +866,7 @@
       "repo": "mvanhorn/last30days-skill",
       "stars": 63304,
       "emoji": "🕒",
-      "shortDesc": "自动检索 Reddit/X/YouTube/HN 最近 30 天热点并汇总",
+      "shortDesc": "自动上 Reddit/B站/YouTube/HackerNews 搜最近 30 天热点",
       "descEn": "Research last 30 days across Reddit, X, YouTube, HN, synthesize brief",
       "features": [
         "跨平台",
@@ -848,7 +880,8 @@
         "Copilot",
         "OpenClaw"
       ],
-      "repoUrl": "https://github.com/mvanhorn/last30days-skill"
+      "repoUrl": "https://github.com/mvanhorn/last30days-skill",
+      "useCase": "写论文找热点、想知道 AI 圈最近有啥新瓜、选题材没灵感"
     },
     {
       "id": "mempalace",
@@ -873,7 +906,8 @@
         "AutoGen",
         "原生 LLM 调用"
       ],
-      "repoUrl": "https://github.com/MemPalace/mempalace"
+      "repoUrl": "https://github.com/MemPalace/mempalace",
+      "useCase": "想让 AI 在「开源 Agent 记忆系统，多」方面变强的时候用"
     },
     {
       "id": "autogen",
@@ -883,7 +917,7 @@
       "repo": "microsoft/autogen",
       "stars": 58000,
       "emoji": "🧬",
-      "shortDesc": "微软出品，多 Agent 对话协作框架",
+      "shortDesc": "微软出品，多个 AI 对话协作框架",
       "descEn": "Microsoft multi-agent conversation framework — agents talk to solve tasks",
       "features": [
         "多 Agent 对话",
@@ -896,7 +930,8 @@
         "Python",
         ".NET"
       ],
-      "repoUrl": "https://github.com/microsoft/autogen"
+      "repoUrl": "https://github.com/microsoft/autogen",
+      "useCase": "想让多个 AI 像开会一样讨论、互相配合完成复杂任务"
     },
     {
       "id": "humanizer",
@@ -906,7 +941,7 @@
       "repo": "blader/humanizer",
       "stars": 53219,
       "emoji": "✍️",
-      "shortDesc": "让 AI 写作更像人类！去除 AI 生成痕迹",
+      "shortDesc": "AI 写的东西一看就像机器？帮你改成真人语气，去 AI 味",
       "descEn": "Remove signs of AI-generated writing, sounds natural and human",
       "features": [
         "AI 痕迹去除",
@@ -919,7 +954,8 @@
         "Claude Code",
         "Copilot"
       ],
-      "repoUrl": "https://github.com/blader/humanizer"
+      "repoUrl": "https://github.com/blader/humanizer",
+      "useCase": "AI 写了作文、论文、朋友圈文案，要洗稿变自然"
     },
     {
       "id": "ai-agent-book",
@@ -929,7 +965,7 @@
       "repo": "bojieli/ai-agent-book",
       "stars": 51973,
       "emoji": "📕",
-      "shortDesc": "李博杰著开源书——AI Agent 设计原理与工程实践",
+      "shortDesc": "李博杰著开源书，《深入理解 AI Agent》设计原理与工程实践",
       "descEn": "Open-source book by Bojie Li — AI Agent design principles and engineering",
       "features": [
         "中文",
@@ -942,7 +978,8 @@
         "Python",
         "全栈"
       ],
-      "repoUrl": "https://github.com/bojieli/ai-agent-book"
+      "repoUrl": "https://github.com/bojieli/ai-agent-book",
+      "useCase": "想系统学 AI Agent 原理、有配套代码可以跑"
     },
     {
       "id": "academic-skills",
@@ -952,7 +989,7 @@
       "repo": "Imbad0202/academic-research-skills",
       "stars": 50041,
       "emoji": "🎓",
-      "shortDesc": "13 Agent 深度研究团队 + 12 Agent 论文写作团队",
+      "shortDesc": "13 个 AI 组成研究团队 + 12 个 AI 写论文 + 同行评审",
       "descEn": "13-agent deep research, 12-agent paper writing, multi-perspective review",
       "features": [
         "深度研究",
@@ -967,7 +1004,8 @@
         "Copilot",
         "Cursor"
       ],
-      "repoUrl": "https://github.com/Imbad0202/academic-research-skills"
+      "repoUrl": "https://github.com/Imbad0202/academic-research-skills",
+      "useCase": "写论文、做科研、需要 AI 帮你查文献和起草"
     },
     {
       "id": "huginn",
@@ -977,7 +1015,7 @@
       "repo": "huginn/huginn",
       "stars": 50016,
       "emoji": "📊",
-      "shortDesc": "让 AI 创建/监控/执行数据代理——经典自动化平台",
+      "shortDesc": "让 AI 创建/监控/执行数据代理，经典自动化平台",
       "descEn": "Create agents that monitor and act on your behalf — classic automation",
       "features": [
         "监控执行",
@@ -990,7 +1028,8 @@
         "Docker",
         "Web UI"
       ],
-      "repoUrl": "https://github.com/huginn/huginn"
+      "repoUrl": "https://github.com/huginn/huginn",
+      "useCase": "想让 AI 定时自动干活、监控数据、执行任务"
     },
     {
       "id": "scientific-agent-skills",
@@ -1000,7 +1039,7 @@
       "repo": "K-Dense-AI/scientific-agent-skills",
       "stars": 47241,
       "emoji": "🔬",
-      "shortDesc": "把 AI 变成科学家！170+ skills，25 万+ 科研人员在用",
+      "shortDesc": "AI 科学家技能包，数据分析、科研流程自动化",
       "descEn": "Turn any AI agent into an AI scientist — 170+ validated skills covering bio, chem, medicine, engineering.",
       "features": [
         "170+ 科学 Skill",
@@ -1017,7 +1056,8 @@
         "Codex",
         "Trae"
       ],
-      "repoUrl": "https://github.com/K-Dense-AI/scientific-agent-skills"
+      "repoUrl": "https://github.com/K-Dense-AI/scientific-agent-skills",
+      "useCase": "理工科做实验、跑数据、想让 AI 帮你干科研活"
     },
     {
       "id": "antigravity-skills",
@@ -1027,7 +1067,7 @@
       "repo": "sickn33/antigravity-awesome-skills",
       "stars": 47135,
       "emoji": "⚡",
-      "shortDesc": "500+ 通用 Agent Skills 大合集：开发/架构/安全/DevOps",
+      "shortDesc": "500+ 个 AI Skill 大合集，开发/安全/DevOps 全都有",
       "descEn": "500+ foundational skills: dev, architecture, security, DevOps, cloud",
       "features": [
         "500+ Skill",
@@ -1042,7 +1082,8 @@
         "Cursor",
         "OpenClaw"
       ],
-      "repoUrl": "https://github.com/sickn33/antigravity-awesome-skills"
+      "repoUrl": "https://github.com/sickn33/antigravity-awesome-skills",
+      "useCase": "想挖更多好用的 Skill、逛技能超市找合适的工具"
     },
     {
       "id": "oh-my-pi",
@@ -1052,7 +1093,7 @@
       "repo": "can1357/oh-my-pi",
       "stars": 33911,
       "emoji": "💡",
-      "shortDesc": "Pi Agent 增强版——LSP 深度集成+调试器调用",
+      "shortDesc": "Pi Agent 增强版，自动重命名、自动调试、LSP 集成",
       "descEn": "Pi agent enhanced — LSP integration + debugger invocation",
       "features": [
         "LSP 深度集成",
@@ -1067,7 +1108,8 @@
         "Linux",
         "Windows"
       ],
-      "repoUrl": "https://github.com/can1357/oh-my-pi"
+      "repoUrl": "https://github.com/can1357/oh-my-pi",
+      "useCase": "想要更聪明的 AI 编辑器、重命名自动更所有引用"
     },
     {
       "id": "book-to-skill",
@@ -1077,7 +1119,7 @@
       "repo": "virgiliojr94/book-to-skill",
       "stars": 33202,
       "emoji": "📖",
-      "shortDesc": "把技术书/文档自动转成 Agent Skill",
+      "shortDesc": "把技术书/文档自动转成 AI Skill，章节拆分 + SKILL.md 生成",
       "descEn": "Automatically convert tech books into agent skills",
       "features": [
         "自动拆分章节",
@@ -1089,7 +1131,8 @@
         "Python",
         "Claude Code"
       ],
-      "repoUrl": "https://github.com/virgiliojr94/book-to-skill"
+      "repoUrl": "https://github.com/virgiliojr94/book-to-skill",
+      "useCase": "想让 AI 基于某本书/文档回答问题"
     },
     {
       "id": "find-skills",
@@ -1113,7 +1156,8 @@
         "Claude Code",
         "Copilot"
       ],
-      "repoUrl": "https://github.com/vercel-labs/skills"
+      "repoUrl": "https://github.com/vercel-labs/skills",
+      "useCase": "想让 AI 在「帮你\"找适合的 Skill\"的」方面变强的时候用"
     },
     {
       "id": "cua",
@@ -1123,7 +1167,7 @@
       "repo": "TryCua/cua",
       "stars": 27618,
       "emoji": "🖥️",
-      "shortDesc": "为 AI Agent 提供高性能虚拟环境",
+      "shortDesc": "给 AI Agent 一个专用电脑，自动化操作应用、上网、办公",
       "descEn": "High-performance virtual environments for AI agents — automate computer tasks",
       "features": [
         "轻量虚拟机",
@@ -1136,7 +1180,8 @@
         "Mac",
         "Linux"
       ],
-      "repoUrl": "https://github.com/TryCua/cua"
+      "repoUrl": "https://github.com/TryCua/cua",
+      "useCase": "想让 AI 在隔离环境里帮你跑用电脑的任务"
     },
     {
       "id": "promptfoo",
@@ -1146,7 +1191,7 @@
       "repo": "promptfoo/promptfoo",
       "stars": 25609,
       "emoji": "🧪",
-      "shortDesc": "被 OpenAI 收购！Prompt 测试 + AI 红队旗舰工具",
+      "shortDesc": "被 OpenAI 收购的 AI 测试工具，Prompt 对不对、红队能不能攻破",
       "descEn": "Acquired by OpenAI! Prompt testing + AI red team flagship tool",
       "features": [
         "MIT 开源",
@@ -1160,7 +1205,8 @@
         "Node.js",
         "OpenAI 背书"
       ],
-      "repoUrl": "https://github.com/promptfoo/promptfoo"
+      "repoUrl": "https://github.com/promptfoo/promptfoo",
+      "useCase": "上线 AI 产品前先测一遍、集成到 CI/CD 自动化测试"
     },
     {
       "id": "paseo",
@@ -1170,7 +1216,7 @@
       "repo": "getpaseo/paseo",
       "stars": 19142,
       "emoji": "📱",
-      "shortDesc": "跨设备管理 AI Agent：iOS/Android/桌面/Web/CLI 全覆盖",
+      "shortDesc": "手机 + 电脑统一管 AI Agent，iOS/Android/桌面/Web 全覆盖",
       "descEn": "Cross-platform management for Claude Code, Codex — voice, multi-device",
       "features": [
         "多客户端",
@@ -1185,7 +1231,8 @@
         "桌面",
         "Web"
       ],
-      "repoUrl": "https://github.com/getpaseo/paseo"
+      "repoUrl": "https://github.com/getpaseo/paseo",
+      "useCase": "想在手机上用语音指挥 AI、跨设备接着干"
     },
     {
       "id": "GenericAgent",
@@ -1195,7 +1242,7 @@
       "repo": "lsdefine/GenericAgent",
       "stars": 14277,
       "emoji": "🌱",
-      "shortDesc": "自我进化 Agent：从 3.3K 行种子长出完整系统",
+      "shortDesc": "AI 自己长技能，从种子代码长出完整的系统 Agent",
       "descEn": "Self-evolving agent: grows skill tree from seed, 6x less tokens",
       "features": [
         "自我进化",
@@ -1208,7 +1255,8 @@
         "Claude Code",
         "Copilot"
       ],
-      "repoUrl": "https://github.com/lsdefine/GenericAgent"
+      "repoUrl": "https://github.com/lsdefine/GenericAgent",
+      "useCase": "想看 AI 怎么自我进化、研究级玩法"
     },
     {
       "id": "NVIDIA/garak",
@@ -1232,7 +1280,8 @@
         "Python",
         "跨平台"
       ],
-      "repoUrl": "https://github.com/NVIDIA/garak"
+      "repoUrl": "https://github.com/NVIDIA/garak",
+      "useCase": "想让 AI 在「NVIDIA 出品 LLM 漏」方面变强的时候用"
     },
     {
       "id": "plannotator",
@@ -1242,7 +1291,7 @@
       "repo": "backnotprop/plannotator",
       "stars": 9082,
       "emoji": "📋",
-      "shortDesc": "AI 计划/代码的本地可视化批注工具",
+      "shortDesc": "AI 写的计划和代码，用浏览器可视化批注，反馈自动回传",
       "descEn": "Local plan/code annotation tool — feedback flows back to AI agent",
       "features": [
         "浏览器可视化",
@@ -1256,7 +1305,8 @@
         "Codex",
         "Copilot CLI"
       ],
-      "repoUrl": "https://github.com/backnotprop/plannotator"
+      "repoUrl": "https://github.com/backnotprop/plannotator",
+      "useCase": "AI 写完代码你想先审一下、加批注、然后让它改"
     },
     {
       "id": "dashi-ppt",
@@ -1266,7 +1316,7 @@
       "repo": "chuspeeism/dashi-ppt-skill",
       "stars": 9022,
       "emoji": "📽️",
-      "shortDesc": "让 AI Agent 帮你做 PPT——文档→网页 PPT→可编辑 PPTX",
+      "shortDesc": "把文字丢给 AI，直接出可编辑 PPT，网页版 + 一键导出 PPTX",
       "descEn": "Turn docs into editable PPT — web-based + exportable PPTX",
       "features": [
         "网页版 PPT",
@@ -1279,7 +1329,8 @@
         "Claude Code",
         "Copilot"
       ],
-      "repoUrl": "https://github.com/chuspeeism/dashi-ppt-skill"
+      "repoUrl": "https://github.com/chuspeeism/dashi-ppt-skill",
+      "useCase": "老师让做汇报、要交 PPT、懒得一页页写"
     },
     {
       "id": "ts-reset",
@@ -1303,7 +1354,8 @@
         "Copilot",
         "TypeScript"
       ],
-      "repoUrl": "https://github.com/mattpocock/ts-reset"
+      "repoUrl": "https://github.com/mattpocock/ts-reset",
+      "useCase": "想让 AI 在「TypeScript + AI」方面变强的时候用"
     },
     {
       "id": "giskard",
@@ -1327,7 +1379,8 @@
         "Python",
         "跨平台"
       ],
-      "repoUrl": "https://github.com/giskard-ai/giskard-oss"
+      "repoUrl": "https://github.com/giskard-ai/giskard-oss",
+      "useCase": "想让 AI 在「AI 质量保证 + 自动化红队」方面变强的时候用"
     },
     {
       "id": "PyRIT",
@@ -1337,7 +1390,7 @@
       "repo": "microsoft/PyRIT",
       "stars": 4563,
       "emoji": "🔴",
-      "shortDesc": "微软 AI 红队工具——多轮对抗 + 多模态攻击编排",
+      "shortDesc": "微软出品，AI 红队工具箱，多轮越狱 + 多模态攻击",
       "descEn": "Microsoft's AI red team tool — multi-turn adversarial testing, multi-modal",
       "features": [
         "多轮越狱",
@@ -1351,7 +1404,8 @@
         "Python",
         "微软出品"
       ],
-      "repoUrl": "https://github.com/microsoft/PyRIT"
+      "repoUrl": "https://github.com/microsoft/PyRIT",
+      "useCase": "想研究 AI 越狱攻击、学安全攻防技术"
     },
     {
       "id": "PurpleLlama",
@@ -1361,7 +1415,7 @@
       "repo": "facebookresearch/PurpleLlama",
       "stars": 4410,
       "emoji": "🟪",
-      "shortDesc": "Meta 出品 LLM 安全评估框架——越狱测试 + 运行时防护",
+      "shortDesc": "Meta 出品，AI 安全评估框架 + 运行时防护墙",
       "descEn": "Meta's LLM security eval framework — jailbreak testing + runtime guardrails",
       "features": [
         "内容审核器",
@@ -1375,7 +1429,8 @@
         "Python",
         "Meta 出品"
       ],
-      "repoUrl": "https://github.com/facebookresearch/PurpleLlama"
+      "repoUrl": "https://github.com/facebookresearch/PurpleLlama",
+      "useCase": "想给 AI 产品加一层安全防护、防 Prompt Injection"
     },
     {
       "id": "llm-guard",
@@ -1385,7 +1440,7 @@
       "repo": "protectai/llm-guard",
       "stars": 3213,
       "emoji": "🧱",
-      "shortDesc": "LLM 交互安全工具包——输入输出双向防护",
+      "shortDesc": "给 AI 加安全护栏，输入输出双向过滤",
       "descEn": "Security toolkit for LLM interactions — input + output scanning",
       "features": [
         "输入净化",
@@ -1399,7 +1454,8 @@
         "Python",
         "跨平台"
       ],
-      "repoUrl": "https://github.com/protectai/llm-guard"
+      "repoUrl": "https://github.com/protectai/llm-guard",
+      "useCase": "自己做的 AI 产品想防 Prompt Injection"
     },
     {
       "id": "snyk-agent-scan",
@@ -1409,7 +1465,7 @@
       "repo": "snyk/agent-scan",
       "stars": 3103,
       "emoji": "🔒",
-      "shortDesc": "AI Agent / MCP Server / Skill 安全扫描——15+ 风险类型",
+      "shortDesc": "Snyk 出品，扫 AI Agent/MCP/Skill 有没有恶意代码",
       "descEn": "Security scanner for AI agents, MCP servers, and agent skills",
       "features": [
         "15+ 风险类型",
@@ -1425,7 +1481,8 @@
         "Windsurf",
         "Node.js"
       ],
-      "repoUrl": "https://github.com/snyk/agent-scan"
+      "repoUrl": "https://github.com/snyk/agent-scan",
+      "useCase": "装了新 Skill 想先扫一下安不安全"
     },
     {
       "id": "cisco-skill-scanner",
@@ -1435,7 +1492,7 @@
       "repo": "cisco-ai-defense/skill-scanner",
       "stars": 2569,
       "emoji": "🛡️",
-      "shortDesc": "Cisco AI Defense——Agent Skill 风险模式检测",
+      "shortDesc": "Cisco AI Defense，扫 Agent Skill 的风险模式和隐藏威胁",
       "descEn": "Cisco AI Defense — detect risk patterns in agent skills",
       "features": [
         "签名检测",
@@ -1449,7 +1506,8 @@
         "Python",
         "Cisco"
       ],
-      "repoUrl": "https://github.com/cisco-ai-defense/skill-scanner"
+      "repoUrl": "https://github.com/cisco-ai-defense/skill-scanner",
+      "useCase": "批量审查 Skill 库、担心装了恶意 Skill"
     },
     {
       "id": "slowmist-agent-sec",
@@ -1459,7 +1517,7 @@
       "repo": "slowmist/slowmist-agent-security",
       "stars": 509,
       "emoji": "🌫️",
-      "shortDesc": "慢雾科技 AI Agent 安全审查框架——代码+URL+链上地址",
+      "shortDesc": "慢雾科技出品，AI Agent 安全审查框架",
       "descEn": "SlowMist AI Agent security review framework — code, URL, on-chain",
       "features": [
         "GitHub Repo 审计",
@@ -1473,7 +1531,8 @@
         "Python",
         "慢雾科技"
       ],
-      "repoUrl": "https://github.com/slowmist/slowmist-agent-security"
+      "repoUrl": "https://github.com/slowmist/slowmist-agent-security",
+      "useCase": "自己搭了 Agent 想请安全专家审一下"
     },
     {
       "id": "seclab-taskflow",
@@ -1483,7 +1542,7 @@
       "repo": "GitHubSecurityLab/seclab-taskflow-agent",
       "stars": 259,
       "emoji": "🕵️",
-      "shortDesc": "GitHub 安全实验室 AI 安全自动化框架——24 Android 漏洞发现",
+      "shortDesc": "GitHub 安全实验室出品，AI 安全自动化发现漏洞",
       "descEn": "GitHub Security Lab AI security automation framework",
       "features": [
         "安全研究员 workflow",
@@ -1497,7 +1556,8 @@
         "GitHub Codespaces",
         "Copilot"
       ],
-      "repoUrl": "https://github.com/GitHubSecurityLab/seclab-taskflow-agent"
+      "repoUrl": "https://github.com/GitHubSecurityLab/seclab-taskflow-agent",
+      "useCase": "想让 AI 自动帮你审代码、找漏洞"
     },
     {
       "id": "adversa-redteam",
@@ -1521,7 +1581,8 @@
         "Python",
         "研究级"
       ],
-      "repoUrl": "https://github.com/adversa-ai/adversa-red-team-agent"
+      "repoUrl": "https://github.com/adversa-ai/adversa-red-team-agent",
+      "useCase": "想让 AI 在「专门攻破 AI Agent 的」方面变强的时候用"
     }
   ]
 }
