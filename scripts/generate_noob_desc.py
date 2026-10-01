@@ -63,45 +63,42 @@ def call_pollinations(name, desc, cat, stars):
         "stream": False,
     }
 
-    for attempt in range(max_retries):
-        try:
-            data = json.dumps(payload).encode("utf-8")
-            req = urllib.request.Request(
-                POLLINATIONS_URL,
-                data=data,
-                headers={
-                    "Content-Type": "application/json",
-                    "User-Agent": "awesome-ai-skills-generator",
-                },
-            )
-            with urllib.request.urlopen(req, timeout=30) as resp:
-                result = json.loads(resp.read().decode("utf-8"))
-                text = result["choices"][0]["message"]["content"].strip()
+    # 单次尝试，失败直接跳过
+    try:
+        data = json.dumps(payload).encode("utf-8")
+        req = urllib.request.Request(
+            POLLINATIONS_URL,
+            data=data,
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": "awesome-ai-skills-generator",
+            },
+        )
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            text = result["choices"][0]["message"]["content"].strip()
 
-            # 解析 JSON（AI 可能包 ```json ... ```）
-            text = re.sub(r"^```(json)?\s*", "", text)
-            text = re.sub(r"\s*```$", "", text)
-            parsed = json.loads(text)
+        # 解析 JSON（AI 可能包 ```json ... ```）
+        text = re.sub(r"^```(json)?\s*", "", text)
+        text = re.sub(r"\s*```$", "", text)
+        parsed = json.loads(text)
 
-            short = str(parsed.get("shortDesc", "")).strip()
-            uc = str(parsed.get("useCase", "")).strip()
-            if short and uc:
-                return short, uc
-            print(f"  ⚠️ 返回不完整: {text[:100]}")
-            return None
+        short = str(parsed.get("shortDesc", "")).strip()
+        uc = str(parsed.get("useCase", "")).strip()
+        if short and uc:
+            return short, uc
+        print(f"  ⚠️ 返回不完整: {text[:100]}")
+        return None
 
-        except urllib.error.HTTPError as e:
-            wait = 15 + attempt * 10
-            print(f"  ⚠️ HTTP {e.code}，等 {wait}s 重试 ({attempt+1}/{max_retries})")
-            time.sleep(wait)
-        except json.JSONDecodeError:
-            print(f"  ⚠️ JSON 解析失败，重试 ({attempt+1}/{max_retries})")
-            time.sleep(5)
-        except Exception as e:
-            print(f"  ⚠️ {e}，重试 ({attempt+1}/{max_retries})")
-            time.sleep(5)
-
-    return None
+    except urllib.error.HTTPError as e:
+        print(f"  ⚠️ HTTP {e.code}，生成失败")
+        return None
+    except json.JSONDecodeError:
+        print(f"  ⚠️ JSON 解析失败，生成失败")
+        return None
+    except Exception as e:
+        print(f"  ⚠️ {e}，生成失败")
+        return None
 
 
 def main():
