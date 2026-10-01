@@ -93,7 +93,8 @@ function renderHome(data) {
             </span>
           </div>
           <h3 class="text-lg font-bold mb-1.5 text-slate-100">${s.name}</h3>
-          <p class="text-slate-400 text-sm leading-relaxed line-clamp-2 mb-3">${s.shortDesc}</p>
+          <p class="text-slate-400 text-sm leading-relaxed line-clamp-2 mb-2">${s.shortDesc}</p>
+          ${s.useCase ? `<p class="text-amber-400/80 text-xs leading-relaxed line-clamp-1 mb-2"><i class="fa-regular fa-lightbulb mr-1 text-[10px]"></i>${s.useCase}</p>` : ''}
           <div class="flex items-center justify-between text-xs text-slate-500 pt-2 border-t border-slate-700/30">
             <span>${catName}</span>
             <span class="text-indigo-400">点击查看 →</span>
@@ -145,6 +146,7 @@ function renderDetail(data) {
           </div>
           <h2 class="text-2xl sm:text-3xl font-black mb-2 gradient-text">${s.name}</h2>
           <p class="text-slate-300 text-base">${s.shortDesc}</p>
+          ${s.useCase ? `<div class="mt-3 p-3 rounded-lg bg-amber-500/10 border border-amber-500/30 text-amber-200 text-sm"><i class="fa-regular fa-lightbulb mr-2"></i>什么时候用：${s.useCase}</div>` : ''}
           <p class="text-slate-500 text-sm mt-1 italic">${s.descEn}</p>
           <div class="mt-4 flex gap-2">
             <a href="${s.repoUrl}" target="_blank" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-slate-800 hover:bg-slate-700 border border-slate-700 transition text-sm">
