@@ -23,8 +23,9 @@ POLLINATIONS_URL = "https://text.pollinations.ai/openai"
 MODEL = "deepseek"  # DeepSeek V3.1，中文好
 
 # ========== 关键参数 ==========
-BATCH_SIZE = 20        # 每次最多处理几个（防止 Actions 跑太久超时）
-REQUEST_INTERVAL = 5   # 每次请求间隔秒数（Pollinations 匿名限流 ~1/15s，5s 够了）
+REQUEST_INTERVAL = 5   # 每次请求间隔秒数（Pollinations 匿名限流）
+# 注：不设 BATCH_SIZE，一次性跑完所有缺 useCase 的（133个 ≈ 11分钟）
+# GitHub Actions 默认超时 6 小时，完全够用
 
 # ========== Prompt 模板 ==========
 SYSTEM_PROMPT = """\
@@ -112,14 +113,13 @@ def main():
     with open(data_path, "r", encoding="utf-8") as f:
         data = json.load(f)
 
-    # 找没有 useCase 的（就是自动发现新增的），取前 BATCH_SIZE 个
-    need_gen_all = [s for s in data["skills"] if not s.get("useCase") or len(s.get("useCase", "")) < 5]
-    need_gen = need_gen_all[:BATCH_SIZE]
-    skipped = len(need_gen_all) - len(need_gen)
+    # 找没有 useCase 的（跑过的自动跳过）
+    need_gen = [s for s in data["skills"] if not s.get("useCase") or len(s.get("useCase", "")) < 5]
     print(f"\n📚 总 Skill: {len(data['skills'])}")
-    print(f"🎯 本次生成: {len(need_gen)} 个（共 {len(need_gen_all)} 个待生成，分批次）")
-    if skipped:
-        print(f"⏭️  本次跳过: {skipped} 个（下次再处理）")
+    print(f"🎯 本次生成: {len(need_gen)} 个（跑过的已跳过）")
+    if need_gen:
+        eta = len(need_gen) * REQUEST_INTERVAL
+        print(f"⏱️  预计耗时: ~{eta}秒 ({eta//60}分钟)")
 
     if not need_gen:
         print("\n✅ 全部都有大白话了！无事可做。")
