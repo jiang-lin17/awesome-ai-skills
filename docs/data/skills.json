@@ -1070,6 +1070,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "coreyhaines31_marketingskills",
+      "category": "vertical",
+      "name": "marketingskills",
+      "owner": "coreyhaines31",
+      "repo": "coreyhaines31/marketingskills",
+      "stars": 54282,
+      "emoji": "🎯",
+      "shortDesc": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics",
+      "descEn": "Marketing skills for Claude Code and AI agents. CRO, copywriting, SEO, analytics, and growth engineering.",
+      "features": [],
+      "install": "npx skills add coreyhaines31/marketingskills",
+      "usage": "安装后参考 https://github.com/coreyhaines31/marketingskills 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/coreyhaines31/marketingskills",
+      "discoveredAt": "2026-10-12"
+    },
+    {
       "id": "humanizer",
       "category": "skills",
       "name": "humanizer",
@@ -1666,6 +1683,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/titanwings/distilly",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "dipakkr_awesome_ai_engineering",
+      "category": "learn",
+      "name": "awesome-ai-engineering",
+      "owner": "dipakkr",
+      "repo": "dipakkr/awesome-ai-engineering",
+      "stars": 22370,
+      "emoji": "📚",
+      "shortDesc": "🚀 A curated collection of AI engineering resources, roadmaps, tools, and project",
+      "descEn": "🚀 A curated collection of AI engineering resources, roadmaps, tools, and projects covering LLMs, RAG, AI Agents, MCP, fi",
+      "features": [],
+      "install": "git clone https://github.com/dipakkr/awesome-ai-engineering.git",
+      "usage": "安装后参考 https://github.com/dipakkr/awesome-ai-engineering 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/dipakkr/awesome-ai-engineering",
+      "discoveredAt": "2026-10-12"
     },
     {
       "id": "kkkkhazix_khazix_skills",
@@ -3548,6 +3582,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/Appllama/appllama-skills",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "vmoranv_jshookmcp",
+      "category": "vertical",
+      "name": "jshookmcp",
+      "owner": "vmoranv",
+      "repo": "vmoranv/jshookmcp",
+      "stars": 2037,
+      "emoji": "🎯",
+      "shortDesc": "A search-first, profile-aware reverse-engineering workspace for AI agents — 735 ",
+      "descEn": "A search-first, profile-aware reverse-engineering workspace for AI agents — 735 tools across 36 domains in one MCP serve",
+      "features": [],
+      "install": "npm install -g jshookmcp",
+      "usage": "安装后参考 https://github.com/vmoranv/jshookmcp 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/vmoranv/jshookmcp",
+      "discoveredAt": "2026-10-12"
     },
     {
       "id": "gege-circle__github",
