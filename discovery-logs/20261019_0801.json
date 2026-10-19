@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "atilaahmettaner/tradingview-mcp",
+    "stars": 5083,
+    "desc": "MCP server for market analysis in AI assistants: screeners, multi-timeframe technical analysis, back",
+    "html_url": "https://github.com/atilaahmettaner/tradingview-mcp"
+  },
+  {
+    "repo": "Oldcircle/geo-sleuth",
+    "stars": 3406,
+    "desc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, sate",
+    "html_url": "https://github.com/Oldcircle/geo-sleuth"
+  },
+  {
+    "repo": "isair/jarvis",
+    "stars": 2105,
+    "desc": "Private local AI assistant for your desktop. Voice and text chat, personal memory, dictation and MCP",
+    "html_url": "https://github.com/isair/jarvis"
+  },
+  {
+    "repo": "zereight/gitlab-mcp",
+    "stars": 2050,
+    "desc": "MCP server for GitLab: 100+ tools for projects, MRs, issues, pipelines, wikis and more via the GitLa",
+    "html_url": "https://github.com/zereight/gitlab-mcp"
+  }
+]

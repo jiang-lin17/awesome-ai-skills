@@ -2709,6 +2709,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "atilaahmettaner_tradingview_mcp",
+      "category": "vertical",
+      "name": "tradingview-mcp",
+      "owner": "atilaahmettaner",
+      "repo": "atilaahmettaner/tradingview-mcp",
+      "stars": 5083,
+      "emoji": "🎯",
+      "shortDesc": "MCP server for market analysis in AI assistants: screeners, multi-timeframe tech",
+      "descEn": "MCP server for market analysis in AI assistants: screeners, multi-timeframe technical analysis, backtests and sentiment ",
+      "features": [],
+      "install": "pip install tradingview-mcp",
+      "usage": "安装后参考 https://github.com/atilaahmettaner/tradingview-mcp 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/atilaahmettaner/tradingview-mcp",
+      "discoveredAt": "2026-10-19"
+    },
+    {
       "id": "nibzard_awesome_agentic_patterns",
       "category": "learn",
       "name": "awesome-agentic-patterns",
@@ -3012,6 +3029,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/opensumi/core",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "oldcircle_geo_sleuth",
+      "category": "skills",
+      "name": "geo-sleuth",
+      "owner": "Oldcircle",
+      "repo": "Oldcircle/geo-sleuth",
+      "stars": 3406,
+      "emoji": "⚡",
+      "shortDesc": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elev",
+      "descEn": "An agent skill that finds where a photo was taken — OpenStreetMap geometry, elevation skylines, satellite imagery and st",
+      "features": [],
+      "install": "pip install geo-sleuth",
+      "usage": "安装后参考 https://github.com/Oldcircle/geo-sleuth 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/Oldcircle/geo-sleuth",
+      "discoveredAt": "2026-10-19"
     },
     {
       "id": "samber_cc_skills_golang",
@@ -3582,6 +3616,40 @@
       "compatible": [],
       "repoUrl": "https://github.com/Appllama/appllama-skills",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "isair_jarvis",
+      "category": "vertical",
+      "name": "jarvis",
+      "owner": "isair",
+      "repo": "isair/jarvis",
+      "stars": 2105,
+      "emoji": "🎯",
+      "shortDesc": "Private local AI assistant for your desktop. Voice and text chat, personal memor",
+      "descEn": "Private local AI assistant for your desktop. Voice and text chat, personal memory, dictation and MCP tools. Runs offline",
+      "features": [],
+      "install": "pip install jarvis",
+      "usage": "安装后参考 https://github.com/isair/jarvis 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/isair/jarvis",
+      "discoveredAt": "2026-10-19"
+    },
+    {
+      "id": "zereight_gitlab_mcp",
+      "category": "vertical",
+      "name": "gitlab-mcp",
+      "owner": "zereight",
+      "repo": "zereight/gitlab-mcp",
+      "stars": 2050,
+      "emoji": "🎯",
+      "shortDesc": "MCP server for GitLab: 100+ tools for projects, MRs, issues, pipelines, wikis an",
+      "descEn": "MCP server for GitLab: 100+ tools for projects, MRs, issues, pipelines, wikis and more via the GitLab REST/GraphQL API",
+      "features": [],
+      "install": "npm install -g gitlab-mcp",
+      "usage": "安装后参考 https://github.com/zereight/gitlab-mcp 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/zereight/gitlab-mcp",
+      "discoveredAt": "2026-10-19"
     },
     {
       "id": "vmoranv_jshookmcp",
