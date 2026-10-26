@@ -1592,6 +1592,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "alchaincyf_huashu_design",
+      "category": "vertical",
+      "name": "huashu-design",
+      "owner": "alchaincyf",
+      "repo": "alchaincyf/huashu-design",
+      "stars": 26365,
+      "emoji": "🎯",
+      "shortDesc": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六",
+      "descEn": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检",
+      "features": [],
+      "install": "git clone https://github.com/alchaincyf/huashu-design.git",
+      "usage": "安装后参考 https://github.com/alchaincyf/huashu-design 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/alchaincyf/huashu-design",
+      "discoveredAt": "2026-10-26"
+    },
+    {
       "id": "zai-org_open_autoglm",
       "category": "vertical",
       "name": "Open-AutoGLM",
@@ -2802,6 +2819,23 @@
       "useCase": "想研究 AI 越狱攻击、学安全攻防技术"
     },
     {
+      "id": "gamedev-skills_awesome_gamedev_agent_skills",
+      "category": "skills",
+      "name": "awesome-gamedev-agent-skills",
+      "owner": "gamedev-skills",
+      "repo": "gamedev-skills/awesome-gamedev-agent-skills",
+      "stars": 4478,
+      "emoji": "⚡",
+      "shortDesc": "74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, ",
+      "descEn": "74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pygame, LÖVE, Roblox. Po",
+      "features": [],
+      "install": "pip install awesome-gamedev-agent-skills",
+      "usage": "安装后参考 https://github.com/gamedev-skills/awesome-gamedev-agent-skills 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "discoveredAt": "2026-10-26"
+    },
+    {
       "id": "PurpleLlama",
       "category": "vertical",
       "name": "PurpleLlama (Meta)",
@@ -2944,6 +2978,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/mergisi/awesome-openclaw-agents",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "simonlin1212_tradingagents_astock",
+      "category": "framework",
+      "name": "TradingAgents-astock",
+      "owner": "simonlin1212",
+      "repo": "simonlin1212/TradingAgents-astock",
+      "stars": 3794,
+      "emoji": "🧠",
+      "shortDesc": "A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-s",
+      "descEn": "A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent investment research fra",
+      "features": [],
+      "install": "pip install TradingAgents-astock",
+      "usage": "安装后参考 https://github.com/simonlin1212/TradingAgents-astock 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/simonlin1212/TradingAgents-astock",
+      "discoveredAt": "2026-10-26"
     },
     {
       "id": "goochbeater_spiritual_spell_red_teaming",
@@ -3372,6 +3423,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "i365dev_awesome_seo",
+      "category": "learn",
+      "name": "awesome-seo",
+      "owner": "i365dev",
+      "repo": "i365dev/awesome-seo",
+      "stars": 2827,
+      "emoji": "📚",
+      "shortDesc": "Curated SEO, GEO & AI Search resources — technical SEO, agent discoverability, a",
+      "descEn": "Curated SEO, GEO & AI Search resources — technical SEO, agent discoverability, analytics, and traffic monetization.",
+      "features": [],
+      "install": "git clone https://github.com/i365dev/awesome-seo.git",
+      "usage": "安装后参考 https://github.com/i365dev/awesome-seo 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/i365dev/awesome-seo",
+      "discoveredAt": "2026-10-26"
+    },
+    {
       "id": "aws_agent_toolkit_for_aws",
       "category": "vertical",
       "name": "agent-toolkit-for-aws",
@@ -3404,6 +3472,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/hi-godot/godot-ai",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "papersgpt_papersgpt_for_zotero",
+      "category": "vertical",
+      "name": "papersgpt-for-zotero",
+      "owner": "papersgpt",
+      "repo": "papersgpt/papersgpt-for-zotero",
+      "stars": 2681,
+      "emoji": "🎯",
+      "shortDesc": "Professional AI research tool for Zotero: chat with PDFs, whole-library search, ",
+      "descEn": "Professional AI research tool for Zotero: chat with PDFs, whole-library search, Literature Radar, AutoPilot. 30+ LLMs or",
+      "features": [],
+      "install": "npm install -g papersgpt-for-zotero",
+      "usage": "安装后参考 https://github.com/papersgpt/papersgpt-for-zotero 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/papersgpt/papersgpt-for-zotero",
+      "discoveredAt": "2026-10-26"
     },
     {
       "id": "cisco-skill-scanner",

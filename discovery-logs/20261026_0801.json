@@ -1,0 +1,32 @@
+[
+  {
+    "repo": "alchaincyf/huashu-design",
+    "stars": 26365,
+    "desc": "Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风",
+    "html_url": "https://github.com/alchaincyf/huashu-design"
+  },
+  {
+    "repo": "gamedev-skills/awesome-gamedev-agent-skills",
+    "stars": 4478,
+    "desc": "74 game-dev skills for AI coding agents — Godot, Unity, Unreal, Phaser, PixiJS, three.js, Bevy, pyga",
+    "html_url": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills"
+  },
+  {
+    "repo": "simonlin1212/TradingAgents-astock",
+    "stars": 3794,
+    "desc": "A股多Agent投研框架 — 适配A股数据源(龙虎榜/游资/解禁等)，7位分析师基于A股规则的辩论决策，基于TradingAgents深度改造，适配大A。A-share multi-agent inv",
+    "html_url": "https://github.com/simonlin1212/TradingAgents-astock"
+  },
+  {
+    "repo": "i365dev/awesome-seo",
+    "stars": 2827,
+    "desc": "Curated SEO, GEO & AI Search resources — technical SEO, agent discoverability, analytics, and traffi",
+    "html_url": "https://github.com/i365dev/awesome-seo"
+  },
+  {
+    "repo": "papersgpt/papersgpt-for-zotero",
+    "stars": 2681,
+    "desc": "Professional AI research tool for Zotero: chat with PDFs, whole-library search, Literature Radar, Au",
+    "html_url": "https://github.com/papersgpt/papersgpt-for-zotero"
+  }
+]
