@@ -62,12 +62,12 @@
 
 | # | 项目 | ⭐ Stars | 简介 / Description | 安装 / Install |
 |---|------|----------|---------------------|----------------|
-| 1 | [**superpowers**](https://github.com/obra/superpowers) | 301.8K | 🧩 Agentic skills 框架，教 Agent 先规划再执行，减少混乱代码。An agentic skills framework that teaches agents to plan before coding. | `git clone https://github.com/obra/superpowers` → 放到 Agent skills 目录 |
-| 2 | [**caveman**](https://github.com/JuliusBrussee/caveman) | 113.5K | 🪨 "洞穴人"极简 token Skill，砍掉 65% token，让 AI 像老派程序员一样高效。Cuts 65% tokens by speaking in caveman style. | `go install github.com/JuliusBrussee/caveman@latest` |
-| 3 | [**addyosmani/agent-skills**](https://github.com/addyosmani/agent-skills) | 108.3K | 🔧 Google 出品，生产级 AI coding agent 工程技能包。Production-grade engineering skills by Google's Addy Osmani. | `git clone https://github.com/addyosmani/agent-skills` → 复制 skill 文件夹 |
-| 4 | [**scientific-agent-skills**](https://github.com/K-Dense-AI/scientific-agent-skills) | 52.7K | 🔬 把 AI 变成科学家！170+ skills，25 万+ 科研人员在用，覆盖生物/化学/医药。Turn AI agents into scientists with 170+ validated skills. | `git clone https://github.com/K-Dense-AI/scientific-agent-skills` |
-| 5 | [**anthropics/skills**](https://github.com/anthropics/skills) | 182.1K | 🎯 Anthropic 官方开源 Skill 库，含浏览器操作、数据分析等。Official open-source Agent Skills from Anthropic. | `git clone https://github.com/anthropics/skills` → 放到 `.claude/skills/` |
-| 6 | [**Vercel find-skills**](https://github.com/vercel-labs/skills) | 35.5K | 🔍 帮你"找适合的 Skill"的 Skill！描述任务，自动推荐并安装。Meta-skill that finds and installs the right skill for your task. | `npx skills add https://github.com/vercel-labs/skills -skill find-skills` |
+| 1 | [**superpowers**](https://github.com/obra/superpowers) | 305.2K | 🧩 Agentic skills 框架，教 Agent 先规划再执行，减少混乱代码。An agentic skills framework that teaches agents to plan before coding. | `git clone https://github.com/obra/superpowers` → 放到 Agent skills 目录 |
+| 2 | [**caveman**](https://github.com/JuliusBrussee/caveman) | 115.1K | 🪨 "洞穴人"极简 token Skill，砍掉 65% token，让 AI 像老派程序员一样高效。Cuts 65% tokens by speaking in caveman style. | `go install github.com/JuliusBrussee/caveman@latest` |
+| 3 | [**addyosmani/agent-skills**](https://github.com/addyosmani/agent-skills) | 110.6K | 🔧 Google 出品，生产级 AI coding agent 工程技能包。Production-grade engineering skills by Google's Addy Osmani. | `git clone https://github.com/addyosmani/agent-skills` → 复制 skill 文件夹 |
+| 4 | [**scientific-agent-skills**](https://github.com/K-Dense-AI/scientific-agent-skills) | 54.6K | 🔬 把 AI 变成科学家！170+ skills，25 万+ 科研人员在用，覆盖生物/化学/医药。Turn AI agents into scientists with 170+ validated skills. | `git clone https://github.com/K-Dense-AI/scientific-agent-skills` |
+| 5 | [**anthropics/skills**](https://github.com/anthropics/skills) | 183.8K | 🎯 Anthropic 官方开源 Skill 库，含浏览器操作、数据分析等。Official open-source Agent Skills from Anthropic. | `git clone https://github.com/anthropics/skills` → 放到 `.claude/skills/` |
+| 6 | [**Vercel find-skills**](https://github.com/vercel-labs/skills) | 36.6K | 🔍 帮你"找适合的 Skill"的 Skill！描述任务，自动推荐并安装。Meta-skill that finds and installs the right skill for your task. | `npx skills add https://github.com/vercel-labs/skills -skill find-skills` |
 
 ---
 
@@ -77,12 +77,12 @@
 
 | # | 项目 | ⭐ Stars | 简介 / Description | 安装 / Install |
 |---|------|----------|---------------------|----------------|
-| 7 | [**hermes-agent**](https://github.com/NousResearch/hermes-agent) | 255.0K | 🧠 会"成长"的 Agent！持久化运行，自动学习你的习惯，内置 memory 和 skills。The agent that grows with you, persistent + self-learning. | `curl -fsSL https://hermes-agent.dev/install.sh \| bash` |
-| 8 | [**AutoGPT**](https://github.com/Significant-Gravitas/AutoGPT) | 187.6K | 🎯 自主 Agent 先驱！给 AI 一个目标，它自动规划、执行、循环。The OG autonomous AI agent — give it a goal, it plans & executes. | `pip install autogpt` 或 Docker：`docker run -it autogpt/autogpt` |
-| 9 | [**dify**](https://github.com/langgenius/dify) | 158.9K | 🎨 开源 Agent 工作流平台，拖拽式构建 Agent，支持云/自建。Open-source platform for building agentic workflows, drag & drop. | `git clone https://github.com/langgenius/dify && cd dify/docker && docker compose up -d` |
-| 10 | [**langflow**](https://github.com/langflow-ai/langflow) | 155.8K | 🧊 LangChain 官方可视化构建器，拖拽搭建 RAG 和 Agent 流程。Visual builder for LangChain, drag-and-drop RAG & agents. | `pip install langflow && langflow run` |
-| 11 | [**agency-agents**](https://github.com/msitarzewski/agency-agents) | 161.3K | 🏢 一整个 AI "代理公司"！每个 Agent 是某个领域的专家（前端、社区运营…）。A complete AI agency — each agent a domain expert. | `git clone https://github.com/msitarzewski/agency-agents` |
-| 12 | [**langchain**](https://github.com/langchain-ai/langchain) | 148.1K | 🔗 Agent 工程标准框架，最大的 Agent 生态系统。The standard framework for building LLM-powered agents. | `pip install langchain` 或 `npm install langchain` |
+| 7 | [**hermes-agent**](https://github.com/NousResearch/hermes-agent) | 257.2K | 🧠 会"成长"的 Agent！持久化运行，自动学习你的习惯，内置 memory 和 skills。The agent that grows with you, persistent + self-learning. | `curl -fsSL https://hermes-agent.dev/install.sh \| bash` |
+| 8 | [**AutoGPT**](https://github.com/Significant-Gravitas/AutoGPT) | 187.8K | 🎯 自主 Agent 先驱！给 AI 一个目标，它自动规划、执行、循环。The OG autonomous AI agent — give it a goal, it plans & executes. | `pip install autogpt` 或 Docker：`docker run -it autogpt/autogpt` |
+| 9 | [**dify**](https://github.com/langgenius/dify) | 159.6K | 🎨 开源 Agent 工作流平台，拖拽式构建 Agent，支持云/自建。Open-source platform for building agentic workflows, drag & drop. | `git clone https://github.com/langgenius/dify && cd dify/docker && docker compose up -d` |
+| 10 | [**langflow**](https://github.com/langflow-ai/langflow) | 156.0K | 🧊 LangChain 官方可视化构建器，拖拽搭建 RAG 和 Agent 流程。Visual builder for LangChain, drag-and-drop RAG & agents. | `pip install langflow && langflow run` |
+| 11 | [**agency-agents**](https://github.com/msitarzewski/agency-agents) | 164.1K | 🏢 一整个 AI "代理公司"！每个 Agent 是某个领域的专家（前端、社区运营…）。A complete AI agency — each agent a domain expert. | `git clone https://github.com/msitarzewski/agency-agents` |
+| 12 | [**langchain**](https://github.com/langchain-ai/langchain) | 148.5K | 🔗 Agent 工程标准框架，最大的 Agent 生态系统。The standard framework for building LLM-powered agents. | `pip install langchain` 或 `npm install langchain` |
 
 ---
 
@@ -92,8 +92,8 @@
 
 | # | 项目 | ⭐ Stars | 简介 / Description | 安装 / Install |
 |---|------|----------|---------------------|----------------|
-| 13 | [**claude-mem**](https://github.com/thedotmack/claude-mem) | 101.7K | 🧠 给 Claude Code 加持久记忆！自动捕捉操作、压缩摘要、智能注入。Persistent memory for Claude Code — captures, compresses, injects context. | `cd ~ && npm install -g claude-mem && claude-mem init` |
-| 14 | [**MemPalace**](https://github.com/MemPalace/mempalace) | 59.6K | 🏰 开源 Agent 记忆系统，多模型支持，RAG 友好。Best-benchmarked open-source AI memory system. | `pip install mempalace` |
+| 13 | [**claude-mem**](https://github.com/thedotmack/claude-mem) | 103.2K | 🧠 给 Claude Code 加持久记忆！自动捕捉操作、压缩摘要、智能注入。Persistent memory for Claude Code — captures, compresses, injects context. | `cd ~ && npm install -g claude-mem && claude-mem init` |
+| 14 | [**MemPalace**](https://github.com/MemPalace/mempalace) | 59.7K | 🏰 开源 Agent 记忆系统，多模型支持，RAG 友好。Best-benchmarked open-source AI memory system. | `pip install mempalace` |
 
 ---
 
@@ -103,10 +103,10 @@
 
 | # | 项目 | ⭐ Stars | 简介 / Description | 安装 / Install |
 |---|------|----------|---------------------|----------------|
-| 15 | [**firecrawl**](https://github.com/firecrawl/firecrawl) | 192.9K | 🔥 给 Agent 喂网页数据的 API，搜索+抓取+清洗一条龙。Turns websites into LLM-ready data for agents. | `npm install @mendable/firecrawl-js` 或 `pip install firecrawl-py` |
-| 16 | [**browser-use**](https://github.com/browser-use/browser-use) | 118.5K | 🌐 让 LLM 控制浏览器！自动化网页操作。Make AI agents control browsers autonomously. | `pip install browser-use` + `playwright install` |
-| 17 | [**Agent-Reach**](https://github.com/Panniantong/Agent-Reach) | 99.3K | 👁️ 给 Agent 装上全网"眼睛"——Twitter/Reddit/YouTube/B站/小红书，一个 CLI 搞定。Give agents eyes across Twitter, Reddit, YouTube, Bilibili, Xiaohongshu. | `pip install agent-reach` |
-| 18 | [**crawl4ai**](https://github.com/unclecode/crawl4ai) | 85.8K | 🕷️ AI 友好的爬虫，一键把网页变成 LLM 可用的 Markdown。Converts any URL into LLM-ready Markdown in seconds. | `pip install crawl4ai && crawl4ai-setup` |
+| 15 | [**firecrawl**](https://github.com/firecrawl/firecrawl) | 195.4K | 🔥 给 Agent 喂网页数据的 API，搜索+抓取+清洗一条龙。Turns websites into LLM-ready data for agents. | `npm install @mendable/firecrawl-js` 或 `pip install firecrawl-py` |
+| 16 | [**browser-use**](https://github.com/browser-use/browser-use) | 119.2K | 🌐 让 LLM 控制浏览器！自动化网页操作。Make AI agents control browsers autonomously. | `pip install browser-use` + `playwright install` |
+| 17 | [**Agent-Reach**](https://github.com/Panniantong/Agent-Reach) | 102.7K | 👁️ 给 Agent 装上全网"眼睛"——Twitter/Reddit/YouTube/B站/小红书，一个 CLI 搞定。Give agents eyes across Twitter, Reddit, YouTube, Bilibili, Xiaohongshu. | `pip install agent-reach` |
+| 18 | [**crawl4ai**](https://github.com/unclecode/crawl4ai) | 86.3K | 🕷️ AI 友好的爬虫，一键把网页变成 LLM 可用的 Markdown。Converts any URL into LLM-ready Markdown in seconds. | `pip install crawl4ai && crawl4ai-setup` |
 
 ---
 
@@ -116,10 +116,10 @@
 
 | # | 项目 | ⭐ Stars | 简介 / Description | 安装 / Install |
 |---|------|----------|---------------------|----------------|
-| 19 | [**ponytail**](https://github.com/DietrichGebert/ponytail) | 167.3K | 🐴 让 Agent 像"最懒的资深工程师"一样思考——不写多余代码。Makes AI agents think like the laziest senior dev. | `git clone https://github.com/DietrichGebert/ponytail` → Skill 加载 |
-| 20 | [**gemini-cli**](https://github.com/google-gemini/gemini-cli) | 107.4K | 💎 Google 开源的 Gemini CLI Agent，多模态，直接在终端用。Open-source multimodal Gemini agent in your terminal. | `npm install -g @google/gemini-cli` |
-| 21 | [**pi**](https://github.com/earendil-works/pi) | 116.3K | 🍰 轻量 AI Agent 工具箱，统一 LLM API + agent loop + TUI + coding CLI. Lightweight AI agent toolkit: unified API, loop, TUI, coding CLI. | `curl -fsSL https://pi.dev/install.sh \| bash` |
-| 22 | [**rtk**](https://github.com/rtk-ai/rtk) | 83.9K | ⚡ CLI 代理，砍掉 60-90% LLM token 消耗。CLI proxy that cuts LLM token usage 60-90%. | `cargo install rtk` 或下载 release binary |
+| 19 | [**ponytail**](https://github.com/DietrichGebert/ponytail) | 176.4K | 🐴 让 Agent 像"最懒的资深工程师"一样思考——不写多余代码。Makes AI agents think like the laziest senior dev. | `git clone https://github.com/DietrichGebert/ponytail` → Skill 加载 |
+| 20 | [**gemini-cli**](https://github.com/google-gemini/gemini-cli) | 108.4K | 💎 Google 开源的 Gemini CLI Agent，多模态，直接在终端用。Open-source multimodal Gemini agent in your terminal. | `npm install -g @google/gemini-cli` |
+| 21 | [**pi**](https://github.com/earendil-works/pi) | 117.9K | 🍰 轻量 AI Agent 工具箱，统一 LLM API + agent loop + TUI + coding CLI. Lightweight AI agent toolkit: unified API, loop, TUI, coding CLI. | `curl -fsSL https://pi.dev/install.sh \| bash` |
+| 22 | [**rtk**](https://github.com/rtk-ai/rtk) | 84.6K | ⚡ CLI 代理，砍掉 60-90% LLM token 消耗。CLI proxy that cuts LLM token usage 60-90%. | `cargo install rtk` 或下载 release binary |
 
 ---
 
@@ -129,7 +129,7 @@
 
 | # | 项目 | ⭐ Stars | 简介 / Description | 安装 / Install |
 |---|------|----------|---------------------|----------------|
-| 23 | [**system-prompts-and-models-of-ai-tools**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | 144.1K | 🔐 Cursor/Claude Code/Devin/Trae 等 30+ 顶级 AI 工具的 System Prompt 和内部 tools 全集。System prompts & internal tools of 30+ top AI coding tools. | 直接浏览或 `git clone` 研究 |
+| 23 | [**system-prompts-and-models-of-ai-tools**](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | 144.3K | 🔐 Cursor/Claude Code/Devin/Trae 等 30+ 顶级 AI 工具的 System Prompt 和内部 tools 全集。System prompts & internal tools of 30+ top AI coding tools. | 直接浏览或 `git clone` 研究 |
 
 ---
 
@@ -139,8 +139,8 @@
 
 | # | 项目 | ⭐ Stars | 简介 / Description | 安装 / Install |
 |---|------|----------|---------------------|----------------|
-| 24 | [**awesome-llm-apps**](https://github.com/Shubhamsaboo/awesome-llm-apps) | 142.3K | 📚 100+ 免费开源 AI Agent、Agent Skills 和 RAG 应用。100+ free AI agents, agent skills & RAG apps. | 直接浏览 |
-| 25 | [**Hello-Agents**](https://github.com/datawhalechina/Hello-Agents) | 83.7K | 🎓 Datawhale 社区出品，从零构建 AI Native Agent 的完整教程。Complete course for building AI agents from scratch. | `git clone https://github.com/datawhalechina/Hello-Agents` |
+| 24 | [**awesome-llm-apps**](https://github.com/Shubhamsaboo/awesome-llm-apps) | 143.1K | 📚 100+ 免费开源 AI Agent、Agent Skills 和 RAG 应用。100+ free AI agents, agent skills & RAG apps. | 直接浏览 |
+| 25 | [**Hello-Agents**](https://github.com/datawhalechina/Hello-Agents) | 84.6K | 🎓 Datawhale 社区出品，从零构建 AI Native Agent 的完整教程。Complete course for building AI agents from scratch. | `git clone https://github.com/datawhalechina/Hello-Agents` |
 | 26 | [**GitHub awesome-copilot**](https://github.com/github/awesome-copilot) | — | 🌟 GitHub 官方 Copilot 自定义 Agent 和 Skill 合集。Official collection of GitHub Copilot custom agents & skills. | 直接浏览 |
 
 ---
@@ -151,10 +151,10 @@
 
 | # | 项目 | ⭐ Stars | 简介 / Description | 安装 / Install |
 |---|------|----------|---------------------|----------------|
-| 27 | [**n8n**](https://github.com/n8n-io/n8n) | 208.0K | 🔄 开源工作流自动化 + AI 能力，400+ 集成。Open-source workflow automation with native AI. | `npm run n8n` 或 Docker：`docker run n8nio/n8n` |
-| 28 | [**ragflow**](https://github.com/infiniflow/ragflow) | 92.5K | 📑 开源 RAG 引擎，深度文档理解 + Agent 能力融合。Open-source RAG engine with deep doc understanding + agent fusion. | `git clone https://github.com/infiniflow/ragflow && docker compose up -d` |
-| 29 | [**career-ops**](https://github.com/career-ops-hq/career-ops) | 75.6K | 💼 开源 AI 求职 Agent——自动扫描招聘站、筛选职位、生成简历。Open-source AI job search agent. | `pip install career-ops` |
-| 30 | [**autoresearch**](https://github.com/karpathy/autoresearch) | 98.1K | 🧪 Karpathy 出品，自动运行 AI 研究实验。AI agents running research experiments autonomously. | `pip install autoresearch` |
+| 27 | [**n8n**](https://github.com/n8n-io/n8n) | 208.6K | 🔄 开源工作流自动化 + AI 能力，400+ 集成。Open-source workflow automation with native AI. | `npm run n8n` 或 Docker：`docker run n8nio/n8n` |
+| 28 | [**ragflow**](https://github.com/infiniflow/ragflow) | 92.9K | 📑 开源 RAG 引擎，深度文档理解 + Agent 能力融合。Open-source RAG engine with deep doc understanding + agent fusion. | `git clone https://github.com/infiniflow/ragflow && docker compose up -d` |
+| 29 | [**career-ops**](https://github.com/career-ops-hq/career-ops) | 77.4K | 💼 开源 AI 求职 Agent——自动扫描招聘站、筛选职位、生成简历。Open-source AI job search agent. | `pip install career-ops` |
+| 30 | [**autoresearch**](https://github.com/karpathy/autoresearch) | 98.6K | 🧪 Karpathy 出品，自动运行 AI 研究实验。AI agents running research experiments autonomously. | `pip install autoresearch` |
 
 ---
 
