@@ -65,6 +65,7 @@ PROJECTS = [
     ("infiniflow/ragflow", "ragflow"),
     ("career-ops-hq/career-ops", "career-ops"),
     ("karpathy/autoresearch", "autoresearch"),
+    ("vostride/agent-qa", "agent-qa"),
 ]
 
 

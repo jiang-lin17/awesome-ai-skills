@@ -50,7 +50,7 @@
 
 ---
 
-## 🏆 精选项目 Top 30
+## 🏆 精选项目 Top 31
 
 根据 GitHub Star 数、活跃度和实用性筛选（数据更新于 2026 年 10 月）。
 
@@ -155,6 +155,7 @@
 | 28 | [**ragflow**](https://github.com/infiniflow/ragflow) | 92.9K | 📑 开源 RAG 引擎，深度文档理解 + Agent 能力融合。Open-source RAG engine with deep doc understanding + agent fusion. | `git clone https://github.com/infiniflow/ragflow && docker compose up -d` |
 | 29 | [**career-ops**](https://github.com/career-ops-hq/career-ops) | 77.4K | 💼 开源 AI 求职 Agent——自动扫描招聘站、筛选职位、生成简历。Open-source AI job search agent. | `pip install career-ops` |
 | 30 | [**autoresearch**](https://github.com/karpathy/autoresearch) | 98.6K | 🧪 Karpathy 出品，自动运行 AI 研究实验。AI agents running research experiments autonomously. | `pip install autoresearch` |
+| 31 | [**agent-qa**](https://github.com/vostride/agent-qa) | 914 | 🧪 [vostride](https://vostride.com) 自然语言网页与移动端 QA，内置持久化记忆与自我改进。Web/mobile QA with persistent memory and self-improvement. Node.js 24+；FSL-1.1-ALv2 限制竞争性商业使用，模型与设备费用另计。 | `npm install -D agent-qa` |
 
 ---
 
