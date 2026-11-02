@@ -2160,6 +2160,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "tigerless-labs_autoharness",
+      "category": "vertical",
+      "name": "autoharness",
+      "owner": "tigerless-labs",
+      "repo": "tigerless-labs/autoharness",
+      "stars": 10624,
+      "emoji": "🎯",
+      "shortDesc": "Building the self-learning layer next-gen agents will ship with, learning skills",
+      "descEn": "Building the self-learning layer next-gen agents will ship with, learning skills from real work.",
+      "features": [],
+      "install": "pip install autoharness",
+      "usage": "安装后参考 https://github.com/tigerless-labs/autoharness 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/tigerless-labs/autoharness",
+      "discoveredAt": "2026-11-02"
+    },
+    {
       "id": "awesome-opencode_awesome_opencode",
       "category": "learn",
       "name": "awesome-opencode",
@@ -2861,6 +2878,23 @@
       "useCase": "想给 AI 产品加一层安全防护、防 Prompt Injection"
     },
     {
+      "id": "kajisho5_ffmpeg_skill",
+      "category": "vertical",
+      "name": "ffmpeg-skill",
+      "owner": "kajisho5",
+      "repo": "kajisho5/ffmpeg-skill",
+      "stars": 4320,
+      "emoji": "🎯",
+      "shortDesc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable co",
+      "descEn": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP server, for Claude Cod",
+      "features": [],
+      "install": "pip install ffmpeg-skill",
+      "usage": "安装后参考 https://github.com/kajisho5/ffmpeg-skill 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/kajisho5/ffmpeg-skill",
+      "discoveredAt": "2026-11-02"
+    },
+    {
       "id": "pimzino_spec_workflow_mcp",
       "category": "vertical",
       "name": "spec-workflow-mcp",
@@ -3080,6 +3114,40 @@
       "compatible": [],
       "repoUrl": "https://github.com/opensumi/core",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "ar9av_obsidian_wiki",
+      "category": "vertical",
+      "name": "obsidian-wiki",
+      "owner": "Ar9av",
+      "repo": "Ar9av/obsidian-wiki",
+      "stars": 3654,
+      "emoji": "🎯",
+      "shortDesc": "Framework for AI agents to build and maintain a digital brain through Obsidian w",
+      "descEn": "Framework for AI agents to build and maintain a digital brain through Obsidian wiki | Memory System for Agents",
+      "features": [],
+      "install": "pip install obsidian-wiki",
+      "usage": "安装后参考 https://github.com/Ar9av/obsidian-wiki 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/Ar9av/obsidian-wiki",
+      "discoveredAt": "2026-11-02"
+    },
+    {
+      "id": "ai-boost_awesome_image_video_prompts",
+      "category": "learn",
+      "name": "awesome-image-video-prompts",
+      "owner": "ai-boost",
+      "repo": "ai-boost/awesome-image-video-prompts",
+      "stars": 3426,
+      "emoji": "📚",
+      "shortDesc": "Copy-ready prompts for the leading AI video and image models, each with its real",
+      "descEn": "Copy-ready prompts for the leading AI video and image models, each with its real output and source. Plus agent recipes f",
+      "features": [],
+      "install": "pip install awesome-image-video-prompts",
+      "usage": "安装后参考 https://github.com/ai-boost/awesome-image-video-prompts 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/ai-boost/awesome-image-video-prompts",
+      "discoveredAt": "2026-11-02"
     },
     {
       "id": "oldcircle_geo_sleuth",
