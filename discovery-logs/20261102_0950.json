@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "tigerless-labs/autoharness",
+    "stars": 10624,
+    "desc": "Building the self-learning layer next-gen agents will ship with, learning skills from real work.",
+    "html_url": "https://github.com/tigerless-labs/autoharness"
+  },
+  {
+    "repo": "kajisho5/ffmpeg-skill",
+    "stars": 4320,
+    "desc": "Local video editor for coding agents: 42 FFmpeg tools with a machine-readable contract and an MCP se",
+    "html_url": "https://github.com/kajisho5/ffmpeg-skill"
+  },
+  {
+    "repo": "Ar9av/obsidian-wiki",
+    "stars": 3654,
+    "desc": "Framework for AI agents to build and maintain a digital brain through Obsidian wiki | Memory System ",
+    "html_url": "https://github.com/Ar9av/obsidian-wiki"
+  },
+  {
+    "repo": "ai-boost/awesome-image-video-prompts",
+    "stars": 3426,
+    "desc": "Copy-ready prompts for the leading AI video and image models, each with its real output and source. ",
+    "html_url": "https://github.com/ai-boost/awesome-image-video-prompts"
+  }
+]
