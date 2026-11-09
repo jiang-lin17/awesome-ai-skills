@@ -1,0 +1,38 @@
+[
+  {
+    "repo": "OpenMontageInc/OpenMontage",
+    "stars": 78857,
+    "desc": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700",
+    "html_url": "https://github.com/OpenMontageInc/OpenMontage"
+  },
+  {
+    "repo": "wshobson/agents",
+    "stars": 42344,
+    "desc": "Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI,",
+    "html_url": "https://github.com/wshobson/agents"
+  },
+  {
+    "repo": "davila7/claude-code-templates",
+    "stars": 33225,
+    "desc": "Open-source registry and CLI for Claude Code components: agents, commands, skills, hooks, MCPs, sett",
+    "html_url": "https://github.com/davila7/claude-code-templates"
+  },
+  {
+    "repo": "NVIDIA/auto-ontology",
+    "stars": 10727,
+    "desc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. I",
+    "html_url": "https://github.com/NVIDIA/auto-ontology"
+  },
+  {
+    "repo": "ikaijua/Awesome-AITools",
+    "stars": 6286,
+    "desc": "220+ AI tools across 37+ categories — chatbots, coding agents, AI video/image/voice, open-weight mod",
+    "html_url": "https://github.com/ikaijua/Awesome-AITools"
+  },
+  {
+    "repo": "walkinglabs/awesome-harness-engineering",
+    "stars": 4664,
+    "desc": "🛠️ Awesome tools & guides for harness engineering.",
+    "html_url": "https://github.com/walkinglabs/awesome-harness-engineering"
+  }
+]

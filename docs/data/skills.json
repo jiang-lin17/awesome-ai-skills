@@ -842,6 +842,23 @@
       "useCase": "想让 AI 在「Datawhale 出品，从零」方面变强的时候用"
     },
     {
+      "id": "openmontageinc_openmontage",
+      "category": "skills",
+      "name": "OpenMontage",
+      "owner": "OpenMontageInc",
+      "repo": "OpenMontageInc/OpenMontage",
+      "stars": 78857,
+      "emoji": "⚡",
+      "shortDesc": "World's first open-source, agentic video production system. 12 production pipeli",
+      "descEn": "World's first open-source, agentic video production system. 12 production pipelines, 100+ tools, 700+ agent skill and pr",
+      "features": [],
+      "install": "pip install OpenMontage",
+      "usage": "安装后参考 https://github.com/OpenMontageInc/OpenMontage 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/OpenMontageInc/OpenMontage",
+      "discoveredAt": "2026-11-09"
+    },
+    {
       "id": "headroomlabs-ai_headroom",
       "category": "vertical",
       "name": "headroom",
@@ -1324,6 +1341,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "wshobson_agents",
+      "category": "vertical",
+      "name": "agents",
+      "owner": "wshobson",
+      "repo": "wshobson/agents",
+      "stars": 42344,
+      "emoji": "🎯",
+      "shortDesc": "Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCo",
+      "descEn": "Plugins, agents, skills, and commands for Claude Code, Codex CLI, Cursor, OpenCode, Antigravity CLI, GitHub Copilot, and",
+      "features": [],
+      "install": "pip install agents",
+      "usage": "安装后参考 https://github.com/wshobson/agents 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/wshobson/agents",
+      "discoveredAt": "2026-11-09"
+    },
+    {
       "id": "astrbotdevs_astrbot",
       "category": "vertical",
       "name": "AstrBot",
@@ -1433,6 +1467,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/mukul975/Anthropic-Cybersecurity-Skills",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "davila7_claude_code_templates",
+      "category": "vertical",
+      "name": "claude-code-templates",
+      "owner": "davila7",
+      "repo": "davila7/claude-code-templates",
+      "stars": 33225,
+      "emoji": "🎯",
+      "shortDesc": "Open-source registry and CLI for Claude Code components: agents, commands, skill",
+      "descEn": "Open-source registry and CLI for Claude Code components: agents, commands, skills, hooks, MCPs, settings and mods",
+      "features": [],
+      "install": "pip install claude-code-templates",
+      "usage": "安装后参考 https://github.com/davila7/claude-code-templates 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/davila7/claude-code-templates",
+      "discoveredAt": "2026-11-09"
     },
     {
       "id": "book-to-skill",
@@ -2160,6 +2211,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "nvidia_auto_ontology",
+      "category": "vertical",
+      "name": "auto-ontology",
+      "owner": "NVIDIA",
+      "repo": "NVIDIA/auto-ontology",
+      "stars": 10727,
+      "emoji": "🎯",
+      "shortDesc": "Auto Ontology is a Python framework for building semantic, graph-based reasoning",
+      "descEn": "Auto Ontology is a Python framework for building semantic, graph-based reasoning layers over data. It enables determinis",
+      "features": [],
+      "install": "pip install auto-ontology",
+      "usage": "安装后参考 https://github.com/NVIDIA/auto-ontology 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/NVIDIA/auto-ontology",
+      "discoveredAt": "2026-11-09"
+    },
+    {
       "id": "tigerless-labs_autoharness",
       "category": "vertical",
       "name": "autoharness",
@@ -2616,6 +2684,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "ikaijua_awesome_aitools",
+      "category": "learn",
+      "name": "Awesome-AITools",
+      "owner": "ikaijua",
+      "repo": "ikaijua/Awesome-AITools",
+      "stars": 6286,
+      "emoji": "📚",
+      "shortDesc": "220+ AI tools across 37+ categories — chatbots, coding agents, AI video/image/vo",
+      "descEn": "220+ AI tools across 37+ categories — chatbots, coding agents, AI video/image/voice, open-weight models. / 220+ 个 AI 工具、",
+      "features": [],
+      "install": "pip install Awesome-AITools",
+      "usage": "安装后参考 https://github.com/ikaijua/Awesome-AITools 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/ikaijua/Awesome-AITools",
+      "discoveredAt": "2026-11-09"
+    },
+    {
       "id": "dontriskit_awesome_ai_system_prompts",
       "category": "learn",
       "name": "awesome-ai-system-prompts",
@@ -2792,6 +2877,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/aipotheosis-labs/aci",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "walkinglabs_awesome_harness_engineering",
+      "category": "learn",
+      "name": "awesome-harness-engineering",
+      "owner": "walkinglabs",
+      "repo": "walkinglabs/awesome-harness-engineering",
+      "stars": 4664,
+      "emoji": "📚",
+      "shortDesc": "🛠️ Awesome tools & guides for harness engineering.",
+      "descEn": "🛠️ Awesome tools & guides for harness engineering.",
+      "features": [],
+      "install": "git clone https://github.com/walkinglabs/awesome-harness-engineering.git",
+      "usage": "安装后参考 https://github.com/walkinglabs/awesome-harness-engineering 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/walkinglabs/awesome-harness-engineering",
+      "discoveredAt": "2026-11-09"
     },
     {
       "id": "ai-boost_awesome_harness_engineering",
