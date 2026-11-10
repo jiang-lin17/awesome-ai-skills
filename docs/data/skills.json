@@ -4218,6 +4218,32 @@
       ],
       "repoUrl": "https://github.com/adversa-ai/adversa-red-team-agent",
       "useCase": "想让 AI 在「专门攻破 AI Agent 的」方面变强的时候用"
+    },
+    {
+      "id": "agent-qa",
+      "category": "vertical",
+      "name": "agent-qa",
+      "owner": "vostride",
+      "repo": "vostride/agent-qa",
+      "stars": 852,
+      "emoji": "🧪",
+      "shortDesc": "自然语言 Web、Android 和 iOS QA，内置持久化 memidex 记忆与经验证的自我改进",
+      "descEn": "Web and mobile QA with persistent memidex memory, validated self-improvement and step screenshots.",
+      "features": [
+        "自然语言 QA 流程",
+        "持久化 memidex 记忆",
+        "经验证的自我改进",
+        "步骤与截图证据",
+        "CLI、面板与 MCP"
+      ],
+      "install": "npm install -D agent-qa",
+      "usage": "需 Node.js 24+，按官网 https://vostride.com 的文档配置模型和浏览器/设备环境。FSL-1.1-ALv2 允许的本地使用免费，限制竞争性商业使用；模型与设备费用另计。",
+      "compatible": [
+        "Claude Code",
+        "Codex"
+      ],
+      "repoUrl": "https://github.com/vostride/agent-qa",
+      "useCase": "让编码 Agent 检查网页或移动应用流程，并在后续测试中复用已验证的应用知识"
     }
   ]
 }
