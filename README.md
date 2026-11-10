@@ -155,6 +155,7 @@
 | 28 | [**ragflow**](https://github.com/infiniflow/ragflow) | 93.8K | 📑 开源 RAG 引擎，深度文档理解 + Agent 能力融合。Open-source RAG engine with deep doc understanding + agent fusion. | `git clone https://github.com/infiniflow/ragflow && docker compose up -d` |
 | 29 | [**career-ops**](https://github.com/career-ops-hq/career-ops) | 81.3K | 💼 开源 AI 求职 Agent——自动扫描招聘站、筛选职位、生成简历。Open-source AI job search agent. | `pip install career-ops` |
 | 30 | [**autoresearch**](https://github.com/karpathy/autoresearch) | 99.6K | 🧪 Karpathy 出品，自动运行 AI 研究实验。AI agents running research experiments autonomously. | `pip install autoresearch` |
+| 31 | [**agent-qa**](https://github.com/vostride/agent-qa) | 852 | 🧪 自然语言 Web/Android/iOS QA，持久化 memidex 记忆、经验证的自我改进与步骤截图。[官网](https://vostride.com)。Persistent memory and validated self-improvement for QA. Node.js 24+；FSL-1.1-ALv2 本地软件免费，模型与设备费用另计。 | `npm install -D agent-qa` |
 
 ---
 
