@@ -2514,6 +2514,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "deanpeters_product_manager_skills",
+      "category": "vertical",
+      "name": "Product-Manager-Skills",
+      "owner": "deanpeters",
+      "repo": "deanpeters/Product-Manager-Skills",
+      "stars": 8042,
+      "emoji": "🎯",
+      "shortDesc": "Product Management skills framework built on battle-tested methods for Claude Co",
+      "descEn": "Product Management skills framework built on battle-tested methods for Claude Code, Cowork, Codex, and AI agents.",
+      "features": [],
+      "install": "pip install Product-Manager-Skills",
+      "usage": "安装后参考 https://github.com/deanpeters/Product-Manager-Skills 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/deanpeters/Product-Manager-Skills",
+      "discoveredAt": "2026-11-16"
+    },
+    {
       "id": "2fastlabs_agent_squad",
       "category": "vertical",
       "name": "agent-squad",
@@ -3235,6 +3252,23 @@
       "discoveredAt": "2026-11-02"
     },
     {
+      "id": "oil-oil_oil_ui",
+      "category": "vertical",
+      "name": "oil-ui",
+      "owner": "oil-oil",
+      "repo": "oil-oil/oil-ui",
+      "stars": 3433,
+      "emoji": "🎯",
+      "shortDesc": "UI design skill for Claude Code, Codex and other AI agents: explore distinct dir",
+      "descEn": "UI design skill for Claude Code, Codex and other AI agents: explore distinct directions, compare them side by side, refi",
+      "features": [],
+      "install": "pip install oil-ui",
+      "usage": "安装后参考 https://github.com/oil-oil/oil-ui 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/oil-oil/oil-ui",
+      "discoveredAt": "2026-11-16"
+    },
+    {
       "id": "ai-boost_awesome_image_video_prompts",
       "category": "learn",
       "name": "awesome-image-video-prompts",
@@ -3701,6 +3735,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/ANative-Lab/Awesome-Self-Evolving-Agents",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "underleveledbuilder_awesome_short_drama_skills",
+      "category": "skills",
+      "name": "awesome-short-drama-skills",
+      "owner": "UnderleveledBuilder",
+      "repo": "UnderleveledBuilder/awesome-short-drama-skills",
+      "stars": 2399,
+      "emoji": "⚡",
+      "shortDesc": "AI 短剧 · 漫剧 Skill（技能包）精选：剧本、改编、分镜、Seedance / 可灵 / MiniMax 视频提示词，千问、豆包、龙虾 OpenClaw",
+      "descEn": "AI 短剧 · 漫剧 Skill（技能包）精选：剧本、改编、分镜、Seedance / 可灵 / MiniMax 视频提示词，千问、豆包、龙虾 OpenClaw、WorkBuddy、Claude Code、Codex 等智能体可用 | Cu",
+      "features": [],
+      "install": "git clone https://github.com/UnderleveledBuilder/awesome-short-drama-skills.git",
+      "usage": "安装后参考 https://github.com/UnderleveledBuilder/awesome-short-drama-skills 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/UnderleveledBuilder/awesome-short-drama-skills",
+      "discoveredAt": "2026-11-16"
     },
     {
       "id": "astro-han_karpathy_llm_wiki",
