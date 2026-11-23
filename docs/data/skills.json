@@ -2735,6 +2735,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "google-research_paper_orchestra",
+      "category": "framework",
+      "name": "paper-orchestra",
+      "owner": "google-research",
+      "repo": "google-research/paper-orchestra",
+      "stars": 6060,
+      "emoji": "🧠",
+      "shortDesc": "PaperOrchestra is a multi-agent framework for automated AI research paper writin",
+      "descEn": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+      "features": [],
+      "install": "pip install paper-orchestra",
+      "usage": "安装后参考 https://github.com/google-research/paper-orchestra 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/google-research/paper-orchestra",
+      "discoveredAt": "2026-11-23"
+    },
+    {
       "id": "coding-solo_godot_mcp",
       "category": "vertical",
       "name": "godot-mcp",
@@ -2970,6 +2987,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
       "discoveredAt": "2026-10-26"
+    },
+    {
+      "id": "nvidia_skillevaluator",
+      "category": "prompts",
+      "name": "SkillEvaluator",
+      "owner": "NVIDIA",
+      "repo": "NVIDIA/SkillEvaluator",
+      "stars": 4428,
+      "emoji": "🔍",
+      "shortDesc": "Multi-tier framework for evaluating AI agent skills and plugins with quality gat",
+      "descEn": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, security scanning, harness compatibi",
+      "features": [],
+      "install": "pip install SkillEvaluator",
+      "usage": "安装后参考 https://github.com/NVIDIA/SkillEvaluator 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/NVIDIA/SkillEvaluator",
+      "discoveredAt": "2026-11-23"
     },
     {
       "id": "PurpleLlama",
@@ -3661,6 +3695,23 @@
       "discoveredAt": "2026-10-01"
     },
     {
+      "id": "bookwjitchieni1986_blender_ai_mcp_addon",
+      "category": "framework",
+      "name": "blender-ai-mcp-addon",
+      "owner": "bookwjitchieni1986",
+      "repo": "bookwjitchieni1986/blender-ai-mcp-addon",
+      "stars": 2760,
+      "emoji": "🧠",
+      "shortDesc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent w",
+      "descEn": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude",
+      "features": [],
+      "install": "git clone https://github.com/bookwjitchieni1986/blender-ai-mcp-addon.git",
+      "usage": "安装后参考 https://github.com/bookwjitchieni1986/blender-ai-mcp-addon 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon",
+      "discoveredAt": "2026-11-23"
+    },
+    {
       "id": "hi-godot_godot_ai",
       "category": "vertical",
       "name": "godot-ai",
@@ -4194,6 +4245,23 @@
       "compatible": [],
       "repoUrl": "https://github.com/2akouwu/reverify",
       "discoveredAt": "2026-10-01"
+    },
+    {
+      "id": "minglink_dsh_jailbreak_workflow",
+      "category": "prompts",
+      "name": "dsh-jailbreak-workflow",
+      "owner": "Minglink",
+      "repo": "Minglink/dsh-jailbreak-workflow",
+      "stars": 1221,
+      "emoji": "🔍",
+      "shortDesc": "Visual soft-workflow plugin for DeepSeek Harness (dsh-workflow-lite 0.11.0): can",
+      "descEn": "Visual soft-workflow plugin for DeepSeek Harness (dsh-workflow-lite 0.11.0): canvas-to-plan-prompt engine paired with Mi",
+      "features": [],
+      "install": "npm install -g dsh-jailbreak-workflow",
+      "usage": "安装后参考 https://github.com/Minglink/dsh-jailbreak-workflow 的 README",
+      "compatible": [],
+      "repoUrl": "https://github.com/Minglink/dsh-jailbreak-workflow",
+      "discoveredAt": "2026-11-23"
     },
     {
       "id": "slowmist-agent-sec",

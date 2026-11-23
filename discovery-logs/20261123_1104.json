@@ -1,0 +1,26 @@
+[
+  {
+    "repo": "google-research/paper-orchestra",
+    "stars": 6060,
+    "desc": "PaperOrchestra is a multi-agent framework for automated AI research paper writing.",
+    "html_url": "https://github.com/google-research/paper-orchestra"
+  },
+  {
+    "repo": "NVIDIA/SkillEvaluator",
+    "stars": 4428,
+    "desc": "Multi-tier framework for evaluating AI agent skills and plugins with quality gates, security scannin",
+    "html_url": "https://github.com/NVIDIA/SkillEvaluator"
+  },
+  {
+    "repo": "bookwjitchieni1986/blender-ai-mcp-addon",
+    "stars": 2760,
+    "desc": "AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with",
+    "html_url": "https://github.com/bookwjitchieni1986/blender-ai-mcp-addon"
+  },
+  {
+    "repo": "Minglink/dsh-jailbreak-workflow",
+    "stars": 1221,
+    "desc": "Visual soft-workflow plugin for DeepSeek Harness (dsh-workflow-lite 0.11.0): canvas-to-plan-prompt e",
+    "html_url": "https://github.com/Minglink/dsh-jailbreak-workflow"
+  }
+]
